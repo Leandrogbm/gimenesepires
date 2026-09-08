@@ -10,12 +10,26 @@
     @apply bg-paper text-ink font-body antialiased;
   }
   ::selection {
-    background-color: #6E1B34;
-    color: #F5EFE3;
+    background-color: #A9482F;
+    color: #FAF7F2;
   }
   :focus-visible {
-    outline: 2px solid #6E1B34;
+    outline: 2px solid #A9482F;
     outline-offset: 3px;
+  }
+  section[id] {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer components {
+  /* rótulo de seção com número — "01 · Sobre" */
+  .eyebrow {
+    @apply font-body text-xs uppercase tracking-[0.22em] text-brass;
+  }
+  /* fio fino recorrente */
+  .hairline {
+    @apply border-t border-ink/15;
   }
 }
 

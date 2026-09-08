@@ -52,8 +52,10 @@ tailwind.config.js  paleta e tipografia da marca
 
 ## Identidade visual
 
-- Cores: tinta `#1E2A22`, papel `#F5EFE3`, vinho `#6E1B34`, latão `#A9824F`.
-- Tipografia: Fraunces (títulos, com itálico) + Work Sans (corpo/UI).
+- Cores: navio `#16283D`, marfim `#FAF7F2`, terracota `#A9482F`, ouro velho `#9C7C4A`.
+- Tipografia: Newsreader (títulos, com itálico) + Inter (corpo/UI).
+- Layout editorial: seções numeradas (01–04), fios finos, terracota como
+  acento único, seções escuras em navio.
 - Conceito: a "assinatura" das duas sócias como elemento gráfico central —
   simboliza que cada caso passa pelas duas, de fato.
 

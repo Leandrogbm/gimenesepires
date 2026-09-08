@@ -1,5 +1,5 @@
 // Traço de assinatura conjunta — usado como marca recorrente, discreta, nunca decorativa por si só.
-export default function Signature({ className = "", color = "#6E1B34" }) {
+export default function Signature({ className = "", color = "#A9482F" }) {
   return (
     <svg
       viewBox="0 0 260 48"

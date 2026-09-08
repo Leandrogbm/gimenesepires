@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#1E2A22",
-        paper: "#F5EFE3",
-        wine: "#6E1B34",
-        brass: "#A9824F",
+        ink: "#16283D",     // navio profundo — texto e seções escuras
+        paper: "#FAF7F2",    // marfim quente — fundo
+        wine: "#A9482F",     // terracota — acento único
+        brass: "#9C7C4A",    // ouro velho — rótulos e detalhes
       },
       fontFamily: {
-        display: ["Fraunces", "serif"],
-        body: ["Work Sans", "sans-serif"],
+        display: ["Newsreader", "Georgia", "serif"],
+        body: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
