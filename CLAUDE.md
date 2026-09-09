@@ -13,17 +13,18 @@ No test suite exists.
 
 ## Architecture
 
-Single-page institutional site for the Gimenes & Pires law firm. React 19 + Vite + Tailwind (v3), plain `.jsx`, no router, no state management.
+Single-page institutional site for Gimenes e Pires — Sociedade de Advogados (São José do Rio Preto, SP). React 19 + Vite + Tailwind (v3), plain `.jsx`, no router, no state management.
 
 - `src/App.jsx` is the whole page: it stacks the section components (`Hero`, `Sobre`, `Atuacao`, `Diferenciais`, `Contato`) in order inside `<main>`, with `Header` / `Footer` outside. Navigation is anchor links to section `id`s — adding/reordering a section means editing `App.jsx` and the `LINKS` array in `src/components/Header.jsx`.
-- `src/data/contato.js` — all contact info (phone, WhatsApp, email, address, socials, OAB numbers) centralized here. **Every value is a placeholder** and must be filled before publishing. Components import `CONTATO` from here; never hardcode contact data in a component.
-- `src/components/Signature.jsx` — inline SVG of the two partners' joined signature, the brand's recurring motif. Color is a prop.
-- Brand tokens live in `tailwind.config.js`: colors `ink` (navy), `paper` (ivory), `wine` (terracotta accent), `brass` (antique gold); fonts `font-display` (Newsreader) and `font-body` (Inter). Fonts are loaded via `<link>` in `index.html`. Use these tokens, not raw hex. Section eyebrow labels use the `.eyebrow` class (numbered `01 — Sobre`).
+- `src/data/contato.js` — all contact info centralized here. Phones, WhatsApp, address, hours, Google rating and Instagram are real (from the Google Business Profile); email, LinkedIn and OAB numbers are still `TODO`. `google.mapaEmbed` / `google.url` are keyless Google Maps URLs built from an address string. Components import `CONTATO`; never hardcode contact data in a component.
+- `src/components/Logo.jsx` — inline-SVG brand mark (classical column under an arc, with stars) recreated from the firm's logo. Exports `LogoMark` (icon, inherits `currentColor`) and `Wordmark` (mark + "GIMENES E PIRES" in Cinzel). Used in `Header`, `Hero`, `Contato`.
+- `src/components/GoogleReviews.jsx` — social-proof strip (rating + review count) linking to the Google listing; `tone="paper"` variant for dark sections.
+- Brand tokens live in `tailwind.config.js`: colors `ink` (near-black), `paper` (light grey background), `wine` (deep bronze accent), `brass` (light gold, for dark sections); fonts `font-brand` (Cinzel), `font-display` (Newsreader), `font-body` (Inter), loaded via `<link>` in `index.html`. Use these tokens, not raw hex. Section eyebrow labels use the `.eyebrow` class (numbered `01 — Sobre`).
 - `src/index.css` — Tailwind directives plus a small `@layer base` (smooth scroll, focus-visible outline, `scroll-margin-top` for anchored sections, reduced-motion overrides). Accessibility is deliberate throughout (skip link in `App.jsx`, `aria-*` on the mobile menu) — preserve it.
 
 ## Placeholder content to confirm before publishing
 
-Draft text the firm still needs to review: `src/components/Sobre.jsx` (partner bios), `src/components/Atuacao.jsx` (the 4 practice areas), and all of `src/data/contato.js`. No real photos are used — colored initials (NG / NP) stand in for portraits.
+Draft text the firm still needs to review: `src/components/Sobre.jsx` (partner bios), `src/components/Atuacao.jsx` (the 4 practice areas), and the `TODO` fields in `src/data/contato.js` (email, LinkedIn, OAB numbers). No real photos are used — colored initials (NG / NP) stand in for portraits. `src/components/Logo.jsx` is an SVG recreation of the logo; swap in the original vector if available.
 
 ## Deploy
 

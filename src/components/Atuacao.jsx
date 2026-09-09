@@ -34,7 +34,7 @@ export default function Atuacao() {
     <section id="atuacao" className="px-6 md:px-10 py-24 md:py-32 bg-ink text-paper">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">02 — Áreas de atuação</p>
-        <h2 className="font-display font-light text-4xl md:text-[3.4rem] md:leading-[1.05] mb-16 max-w-2xl">
+        <h2 className="font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] mb-16 max-w-2xl text-balance">
           Quatro frentes, <em className="italic text-brass">um só escritório.</em>
         </h2>
 

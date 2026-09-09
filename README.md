@@ -1,7 +1,8 @@
-# Gimenes & Pires Advogadas — site institucional
+# Gimenes e Pires — Sociedade de Advogados · site institucional
 
 Site institucional para gimenesepires.com.br, construído em torno da
-identidade das duas sócias-fundadoras (Nathalia Gimenes e Nicole Pires).
+identidade das duas sócias-fundadoras (Nathalia Gimenes e Nicole Pires) e
+da logomarca do escritório (coluna clássica sob arco, com estrelas).
 Stack: React + Vite + Tailwind CSS.
 
 ## Rodar localmente
@@ -27,8 +28,10 @@ Os arquivos finais ficam em `dist/` — é isso que sobe pro servidor/hospedagem
 
 Nada de dados de contato reais foi inventado. Preencha antes de publicar:
 
-- **`src/data/contato.js`** — telefone, WhatsApp, e-mail, endereço, redes
-  sociais e números da OAB das duas sócias. Está tudo marcado com `TODO`.
+- **`src/data/contato.js`** — telefones, WhatsApp, endereço, horário,
+  avaliações do Google e Instagram já preenchidos com dados reais do Perfil
+  da Empresa no Google. Ainda `TODO`: e-mail, LinkedIn e os números da OAB
+  das duas sócias.
 - **`src/components/Atuacao.jsx`** — as 4 áreas de atuação foram um
   ponto de partida (Tributário/Simples Nacional, Civil, Empresarial,
   Contencioso) com base no que eu sabia do trabalho do escritório. Confirma
@@ -38,6 +41,10 @@ Nada de dados de contato reais foi inventado. Preencha antes de publicar:
 - Não usei foto de ninguém — as "iniciais" (NG / NP) em blocos coloridos
   substituem retrato por enquanto. Se vocês tiverem fotos profissionais,
   vale trocar por elas (fica ainda mais forte).
+- A logomarca em `src/components/Logo.jsx` é uma recriação em SVG. Se
+  houver o arquivo vetorial original, dá pra substituir por ele.
+- O mapa do Google é um embed sem chave de API. Funciona, mas se quiser
+  um pin exato, gere o iframe pelo próprio Google Maps.
 
 ## Estrutura
 
@@ -52,12 +59,12 @@ tailwind.config.js  paleta e tipografia da marca
 
 ## Identidade visual
 
-- Cores: navio `#16283D`, marfim `#FAF7F2`, terracota `#A9482F`, ouro velho `#9C7C4A`.
-- Tipografia: Newsreader (títulos, com itálico) + Inter (corpo/UI).
-- Layout editorial: seções numeradas (01–04), fios finos, terracota como
-  acento único, seções escuras em navio.
-- Conceito: a "assinatura" das duas sócias como elemento gráfico central —
-  simboliza que cada caso passa pelas duas, de fato.
+- Cores: quase-preto `#1B1B18` (cor da logo), marfim `#F4F0E7`, bronze `#7C5A2E`,
+  ouro claro `#B08E56`.
+- Tipografia: Cinzel (logomarca), Newsreader (títulos, com itálico) + Inter (corpo/UI).
+- Layout editorial: seções numeradas (01–04), fios finos, bronze como
+  acento único, seções escuras em quase-preto.
+- Marca: coluna clássica sob arco, com estrelas (`Logo.jsx`), monocromática.
 
 ## Deploy rápido
 

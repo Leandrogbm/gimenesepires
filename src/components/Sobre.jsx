@@ -24,7 +24,7 @@ export default function Sobre() {
         <p className="eyebrow mb-12">01 — Sobre</p>
 
         <div className="grid md:grid-cols-12 gap-10 mb-20">
-          <h2 className="md:col-span-6 font-display font-light text-4xl md:text-[3.4rem] md:leading-[1.05] text-ink">
+          <h2 className="md:col-span-6 font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] text-ink text-balance">
             Duas advogadas, <em className="italic text-wine">um só compromisso.</em>
           </h2>
           <p className="md:col-span-5 md:col-start-8 text-ink/70 text-lg leading-relaxed self-end">

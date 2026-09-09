@@ -4,14 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#16283D",     // navio profundo — texto e seções escuras
-        paper: "#FAF7F2",    // marfim quente — fundo
-        wine: "#A9482F",     // terracota — acento único
-        brass: "#9C7C4A",    // ouro velho — rótulos e detalhes
+        ink: "#1B1B18",     // quase-preto — texto e seções escuras (cor da logo)
+        paper: "#F0F0EE",    // cinza bem claro — fundo
+        wine: "#7C5A2E",     // bronze profundo — acento e ênfase
+        brass: "#B08E56",    // ouro claro — rótulos, números, detalhes em fundo escuro
       },
       fontFamily: {
         display: ["Newsreader", "Georgia", "serif"],
         body: ["Inter", "system-ui", "sans-serif"],
+        brand: ["Cinzel", "Georgia", "serif"], // capitulares da logomarca
       },
     },
   },

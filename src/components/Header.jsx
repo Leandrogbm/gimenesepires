@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Wordmark } from "./Logo";
 
 const LINKS = [
   { href: "#sobre", label: "Sobre" },
@@ -31,8 +32,8 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10 flex items-center justify-between h-20">
-        <a href="#topo" className="font-display text-2xl tracking-tight text-ink">
-          Gimenes <span className="text-wine italic">e</span> Pires
+        <a href="#topo" className="text-ink" aria-label="Gimenes e Pires — Sociedade de Advogados, ir ao topo">
+          <Wordmark />
         </a>
 
         <nav className="hidden md:flex items-center gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-ink/70">
