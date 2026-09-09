@@ -6,8 +6,8 @@ export default {
       colors: {
         ink: "#1D1E20",     // quase-preto — texto e seções escuras
         paper: "#F1F2F3",    // cinza claro neutro — fundo
-        wine: "#7C5A2E",     // bronze — acento e ênfase (destaque do nome)
-        brass: "#B08E56",    // ouro claro — rótulos, números, detalhes em fundo escuro
+        wine: "#1D1E20",     // preto — acento e ênfase (destaque do nome)
+        brass: "#B08968",    // marrom claro — rótulos, números, detalhes em fundo escuro
         card: "#FBFBFB",     // branco quase puro — cartões sobre o fundo cinza
       },
       fontFamily: {

@@ -14,8 +14,10 @@ export const CONTATO = {
   horario: "Segunda a sexta, a partir das 9h",
   instagram: "https://www.instagram.com/nathalia.nicoleadv/",
   linkedin: "", // TODO(Leandro): preencher se houver LinkedIn do escritório
-  oabNathalia: "OAB/SP 000.000", // TODO(Leandro)
-  oabNicole: "OAB/SP 000.000", // TODO(Leandro)
+  // Nathália Fernandes Gimenes — inscrita em SP, RJ e BA
+  oabNathalia: "OAB/SP 415.344 · OAB/RJ 233.923 · OAB/BA 71.774",
+  // Nicole Rossatto Pires de Campos Lima
+  oabNicole: "OAB/SP 409.327",
 
   // Avaliações e localização — Perfil da Empresa no Google
   google: {
