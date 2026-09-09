@@ -46,12 +46,21 @@ Nada de dados de contato reais foi inventado. Preencha antes de publicar:
 
 ## Estrutura
 
+Landing page de captação (um site só, todas as seções levam ao WhatsApp):
+
 ```
 src/
-  components/     seções da página (Header, Hero, Sobre, Atuacao, ...)
-  data/contato.js dados de contato centralizados
-  index.css       estilos globais + fontes
-  App.jsx         monta as seções na ordem
+  components/
+    Hero        chamada + CTA de WhatsApp + avaliações
+    Servicos    "01" — cards de serviço com check
+    Sobre       as sócias (Nathalia e Nicole) + OAB
+    Confianca   "02" — por que o escritório
+    FAQ         "03" — perguntas frequentes (<details> nativo)
+    Contato     "04" — telefones, WhatsApp, mapa
+    WhatsButton CTA de WhatsApp reutilizável (mensagem por seção)
+    Logo        marca oficial (public/brand/)
+  data/contato.js  contato + dados do Google centralizados
+  App.jsx          monta as seções na ordem
 tailwind.config.js  paleta e tipografia da marca
 ```
 

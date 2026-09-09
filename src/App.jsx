@@ -1,8 +1,9 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Servicos from "./components/Servicos";
 import Sobre from "./components/Sobre";
-import Atuacao from "./components/Atuacao";
-import Diferenciais from "./components/Diferenciais";
+import Confianca from "./components/Confianca";
+import FAQ from "./components/FAQ";
 import Contato from "./components/Contato";
 import Footer from "./components/Footer";
 
@@ -18,9 +19,10 @@ export default function App() {
       <Header />
       <main id="conteudo">
         <Hero />
+        <Servicos />
         <Sobre />
-        <Atuacao />
-        <Diferenciais />
+        <Confianca />
+        <FAQ />
         <Contato />
       </main>
       <Footer />

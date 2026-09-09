@@ -1,6 +1,7 @@
 import { CONTATO } from "../data/contato";
 import { LogoMark } from "./Logo";
 import GoogleReviews from "./GoogleReviews";
+import WhatsButton from "./WhatsButton";
 
 const LINHAS = [
   ...CONTATO.telefones.map((t, i) => ({
@@ -8,7 +9,6 @@ const LINHAS = [
     href: `tel:${t.replace(/\D/g, "")}`,
     label: t,
   })),
-  { dt: "WhatsApp", href: `https://wa.me/${CONTATO.whatsapp}`, label: "Enviar mensagem", externo: true },
   { dt: "E-mail", href: `mailto:${CONTATO.email}`, label: CONTATO.email },
   { dt: "Horário", label: CONTATO.horario },
 ];
@@ -20,14 +20,22 @@ export default function Contato() {
         <p className="eyebrow mb-12">04 — Contato</p>
 
         <div className="grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-5">
+          <div className="md:col-span-5 flex flex-col items-start">
             <h2 className="font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] text-balance">
               Vamos conversar sobre o <em className="italic text-brass">seu caso.</em>
             </h2>
             <p className="text-paper/70 leading-relaxed max-w-sm mt-6">
-              Atendimento presencial em São José do Rio Preto e por videochamada
-              para clientes de outras cidades.
+              A forma mais rápida é o WhatsApp: você explica a situação e a gente
+              responde com os próximos passos. Também atendemos presencialmente e
+              por videochamada.
             </p>
+            <WhatsButton
+              variant="onDark"
+              className="mt-8"
+              mensagem="Olá! Vim pelo site da Gimenes e Pires e gostaria de falar sobre o meu caso."
+            >
+              Explicar meu caso
+            </WhatsButton>
             <GoogleReviews className="mt-8" tone="paper" />
             <LogoMark invert className="w-20 mt-12 opacity-80" />
           </div>

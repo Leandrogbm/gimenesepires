@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Wordmark } from "./Logo";
+import WhatsButton from "./WhatsButton";
 
 const LINKS = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#atuacao", label: "Áreas de atuação" },
-  { href: "#diferenciais", label: "Diferenciais" },
+  { href: "#atuacao", label: "Como ajudamos" },
+  { href: "#sobre", label: "As sócias" },
+  { href: "#diferenciais", label: "Por que a G&P" },
+  { href: "#faq", label: "Dúvidas" },
   { href: "#contato", label: "Contato" },
 ];
 
@@ -46,12 +48,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a
-            href="#contato"
-            className="bg-ink text-paper px-5 py-2.5 hover:bg-wine transition-colors focus-visible:bg-wine"
-          >
-            Fale conosco
-          </a>
+          <WhatsButton className="!px-5 !py-2.5">WhatsApp</WhatsButton>
         </nav>
 
         <button
@@ -77,9 +74,9 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <a href="#contato" onClick={() => setOpen(false)} className="text-wine">
-            Fale conosco
-          </a>
+          <WhatsButton className="mt-1 self-start" onClick={() => setOpen(false)}>
+            WhatsApp
+          </WhatsButton>
         </nav>
       )}
     </header>
