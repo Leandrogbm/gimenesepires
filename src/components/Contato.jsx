@@ -29,7 +29,7 @@ export default function Contato() {
               para clientes de outras cidades.
             </p>
             <GoogleReviews className="mt-8" tone="paper" />
-            <LogoMark className="w-20 h-20 mt-12 text-brass" />
+            <LogoMark invert className="w-20 mt-12 opacity-80" />
           </div>
 
           <div className="md:col-span-6 md:col-start-7">

@@ -20,11 +20,8 @@ export default function Hero() {
             sala de audiência.
           </p>
 
-          <div className="md:col-span-4 md:col-start-9 flex flex-col items-start">
-            <LogoMark className="w-28 h-28 text-wine" />
-            <p className="mt-4 font-brand text-xs tracking-[0.24em] text-ink/60">
-              GIMENES E PIRES
-            </p>
+          <div className="hidden md:flex md:col-span-4 md:col-start-9 justify-center">
+            <LogoMark className="w-40 opacity-90" />
           </div>
         </div>
 

@@ -12,7 +12,6 @@ export default {
       fontFamily: {
         display: ["Newsreader", "Georgia", "serif"],
         body: ["Inter", "system-ui", "sans-serif"],
-        brand: ["Cinzel", "Georgia", "serif"], // capitulares da logomarca
       },
     },
   },

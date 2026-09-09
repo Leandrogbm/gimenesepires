@@ -41,8 +41,6 @@ Nada de dados de contato reais foi inventado. Preencha antes de publicar:
 - Não usei foto de ninguém — as "iniciais" (NG / NP) em blocos coloridos
   substituem retrato por enquanto. Se vocês tiverem fotos profissionais,
   vale trocar por elas (fica ainda mais forte).
-- A logomarca em `src/components/Logo.jsx` é uma recriação em SVG. Se
-  houver o arquivo vetorial original, dá pra substituir por ele.
 - O mapa do Google é um embed sem chave de API. Funciona, mas se quiser
   um pin exato, gere o iframe pelo próprio Google Maps.
 
@@ -61,10 +59,11 @@ tailwind.config.js  paleta e tipografia da marca
 
 - Cores: quase-preto `#1B1B18` (cor da logo), marfim `#F4F0E7`, bronze `#7C5A2E`,
   ouro claro `#B08E56`.
-- Tipografia: Cinzel (logomarca), Newsreader (títulos, com itálico) + Inter (corpo/UI).
+- Tipografia: Newsreader (títulos, com itálico) + Inter (corpo/UI).
 - Layout editorial: seções numeradas (01–04), fios finos, bronze como
   acento único, seções escuras em quase-preto.
-- Marca: coluna clássica sob arco, com estrelas (`Logo.jsx`), monocromática.
+- Marca oficial em `public/brand/` (logo horizontal + ícone da coluna).
+  Arte original preta — em fundo escuro, `LogoMark` usa `invert`.
 
 ## Deploy rápido
 
