@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl font-body text-xs uppercase tracking-[0.14em] text-ink/50">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p>
-            &copy; {ano} Gimenes e Pires · Sociedade de Advogados · Nathalia Gimenes{" "}
-            {CONTATO.oabNathalia} · Nicole Pires {CONTATO.oabNicole}
+            &copy; {ano} <span className="text-wine font-medium">Gimenes e Pires</span> · Sociedade
+            de Advogados · Nathalia Gimenes {CONTATO.oabNathalia} · Nicole Pires {CONTATO.oabNicole}
           </p>
           <p>São José do Rio Preto, SP</p>
         </div>

@@ -4,10 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#1B1B18",     // quase-preto — texto e seções escuras (cor da logo)
-        paper: "#F0F0EE",    // cinza bem claro — fundo
-        wine: "#7C5A2E",     // bronze profundo — acento e ênfase
+        ink: "#1D1E20",     // quase-preto — texto e seções escuras
+        paper: "#F1F2F3",    // cinza claro neutro — fundo
+        wine: "#7C5A2E",     // bronze — acento e ênfase (destaque do nome)
         brass: "#B08E56",    // ouro claro — rótulos, números, detalhes em fundo escuro
+        card: "#FBFBFB",     // branco quase puro — cartões sobre o fundo cinza
       },
       fontFamily: {
         display: ["Newsreader", "Georgia", "serif"],

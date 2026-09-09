@@ -44,9 +44,9 @@ export default function Servicos() {
           Do <em className="italic text-wine">planejamento</em> à sala de audiência.
         </h2>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-ink/10 border-y border-ink/10">
+        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {SERVICOS.map((s) => (
-            <div key={s.titulo} className="bg-paper p-8 flex flex-col gap-3">
+            <div key={s.titulo} className="bg-card rounded-2xl border border-ink/10 p-8 flex flex-col gap-3">
               <Check />
               <h3 className="font-display text-xl text-ink">{s.titulo}</h3>
               <p className="text-ink/70 leading-relaxed text-[15px]">{s.texto}</p>

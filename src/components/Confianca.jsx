@@ -28,9 +28,9 @@ export default function Confianca() {
           Você não precisa <em className="italic text-brass">resolver isso sozinho.</em>
         </h2>
 
-        <div className="mt-16 grid md:grid-cols-2 gap-px bg-paper/15 border-y border-paper/15">
+        <div className="mt-16 grid md:grid-cols-2 gap-4">
           {PROMESSAS.map((p) => (
-            <div key={p.titulo} className="bg-ink p-8 md:p-10">
+            <div key={p.titulo} className="rounded-2xl border border-paper/15 p-8 md:p-10">
               <h3 className="font-display italic text-xl text-brass mb-3">{p.titulo}</h3>
               <p className="text-paper/75 leading-relaxed">{p.texto}</p>
             </div>

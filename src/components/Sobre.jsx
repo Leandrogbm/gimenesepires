@@ -36,11 +36,11 @@ export default function Sobre() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-px bg-ink/10">
+        <div className="grid md:grid-cols-2 gap-4">
           {SOCIAS.map((s) => (
-            <div key={s.iniciais} className="bg-paper p-8 md:p-12 flex flex-col gap-6">
+            <div key={s.iniciais} className="bg-card rounded-2xl border border-ink/10 p-8 md:p-12 flex flex-col gap-6">
               <div
-                className={`${s.cor} text-paper w-16 h-16 flex items-center justify-center font-display italic text-2xl`}
+                className={`${s.cor} text-paper w-16 h-16 rounded-xl flex items-center justify-center font-display italic text-2xl`}
               >
                 {s.iniciais}
               </div>

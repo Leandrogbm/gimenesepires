@@ -83,7 +83,7 @@ export default function Contato() {
               src={CONTATO.google.mapaEmbed}
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              className="mt-8 w-full h-64 border border-paper/15 bg-paper/5 grayscale contrast-125"
+              className="mt-8 w-full h-64 rounded-2xl border border-paper/15 bg-paper/5 grayscale contrast-125"
             />
           </div>
         </div>
