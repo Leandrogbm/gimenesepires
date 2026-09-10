@@ -6,7 +6,7 @@ const SOCIAS = [
     nome: "Nathalia Gimenes",
     oab: CONTATO.oabNathalia,
     texto:
-      "Conduz as frentes tributária e contratual, com foco em planejamento fiscal para empresas do Simples Nacional e assessoria jurídica contínua a pequenos e médios negócios da região.",
+      "Conduz as frentes contratual e consultiva, com assessoria jurídica contínua a pessoas e empresas e a elaboração e revisão de contratos.",
     cor: "bg-accent text-accent-ink",
   },
   {

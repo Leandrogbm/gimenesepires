@@ -7,11 +7,11 @@ const PERGUNTAS = [
   },
   {
     q: "O escritório atende só em São José do Rio Preto?",
-    a: "O atendimento presencial é em São José do Rio Preto, mas acompanhamos clientes de outras cidades por videochamada e WhatsApp, com a mesma proximidade.",
+    a: "O atendimento presencial é em São José do Rio Preto, mas acompanhamos clientes de todo o Brasil por videochamada e WhatsApp, com a mesma proximidade.",
   },
   {
     q: "Vocês atendem pessoa física ou só empresa?",
-    a: "Os dois. Empresas do Simples Nacional e pequenos e médios negócios são a maior parte, mas também cuidamos de contratos, cobranças e ações de pessoas físicas.",
+    a: "Os dois. Pequenas e médias empresas são boa parte dos casos, mas também cuidamos de contratos, cobranças e ações de pessoas físicas.",
   },
   {
     q: "Quanto tempo demora um processo?",

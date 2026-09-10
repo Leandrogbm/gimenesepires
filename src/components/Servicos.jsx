@@ -2,14 +2,6 @@ import WhatsButton from "./WhatsButton";
 
 const SERVICOS = [
   {
-    titulo: "Simples Nacional",
-    texto: "Enquadramento, reenquadramento e apuração ou correção de DAS para a sua empresa.",
-  },
-  {
-    titulo: "Planejamento tributário",
-    texto: "Consultoria fiscal recorrente para reduzir carga tributária dentro da lei.",
-  },
-  {
     titulo: "Contratos",
     texto: "Elaboração e revisão de contratos — comerciais, de prestação de serviço e entre sócios.",
   },
@@ -44,7 +36,7 @@ export default function Servicos() {
           Do <em className="italic text-accent">planejamento</em> à sala de audiência.
         </h2>
 
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="mt-16 grid sm:grid-cols-2 gap-4">
           {SERVICOS.map((s) => (
             <div key={s.titulo} className="bg-card rounded-sm border border-line p-8 flex flex-col gap-3">
               <Check />
