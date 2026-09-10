@@ -14,8 +14,8 @@ export default function WhatsButton({
   const href = `https://wa.me/${CONTATO.whatsapp}?text=${encodeURIComponent(mensagem)}`;
   const base = "inline-flex items-center gap-2.5 font-body text-xs font-semibold uppercase tracking-[0.14em] transition duration-200 will-change-transform";
   const estilos = {
-    solid: "bg-accent text-accent-ink px-6 py-3.5 rounded-none hover:bg-fg hover:-translate-y-0.5",
-    onDark: "bg-accent text-accent-ink px-6 py-3.5 rounded-none hover:bg-fg hover:-translate-y-0.5",
+    solid: "bg-accent text-accent-ink px-6 py-3.5 rounded-full hover:bg-fg hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30",
+    onDark: "bg-accent text-accent-ink px-6 py-3.5 rounded-full hover:bg-fg hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30",
     link: "text-accent border-b border-accent/50 pb-1 hover:border-accent hover:translate-x-0.5",
   };
   const estilo = estilos[variant] ?? estilos.solid;

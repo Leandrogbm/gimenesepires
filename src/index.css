@@ -31,6 +31,29 @@
   .hairline {
     @apply border-t border-line;
   }
+  /* cartão padrão — bordas arredondadas + reação ao hover */
+  .card {
+    @apply bg-card border border-line rounded-2xl transition duration-200;
+  }
+  .card:hover {
+    @apply border-accent -translate-y-1 shadow-lg shadow-black/30;
+  }
+}
+
+@layer base {
+  a,
+  button,
+  summary,
+  [role="button"],
+  iframe {
+    transition:
+      color 0.2s,
+      background-color 0.2s,
+      border-color 0.2s,
+      transform 0.2s,
+      box-shadow 0.2s,
+      opacity 0.2s;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

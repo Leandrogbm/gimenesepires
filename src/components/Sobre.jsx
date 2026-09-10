@@ -38,9 +38,9 @@ export default function Sobre() {
 
         <div className="grid md:grid-cols-2 gap-4">
           {SOCIAS.map((s) => (
-            <div key={s.iniciais} className="bg-card rounded-sm border border-line p-8 md:p-12 flex flex-col gap-6">
+            <div key={s.iniciais} className="card p-8 md:p-12 flex flex-col gap-6">
               <div
-                className={`${s.cor} w-16 h-16 rounded-sm flex items-center justify-center font-display italic text-2xl`}
+                className={`${s.cor} w-16 h-16 rounded-2xl flex items-center justify-center font-display italic text-2xl`}
               >
                 {s.iniciais}
               </div>

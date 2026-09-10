@@ -34,7 +34,7 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10 flex items-center justify-between h-20">
-        <a href="#topo" aria-label="Gimenes e Pires — Sociedade de Advogados, ir ao topo">
+        <a href="#topo" aria-label="Gimenes e Pires — Sociedade de Advogados, ir ao topo" className="hover:opacity-80">
           <Wordmark className="h-12 md:h-14" />
         </a>
 

@@ -41,7 +41,7 @@ export default function FAQ() {
           <div className="md:col-span-7 md:col-start-6 border-t border-line">
             {PERGUNTAS.map((p) => (
               <details key={p.q} className="group border-b border-line py-5">
-                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-fg marker:content-none">
+                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-fg marker:content-none hover:text-accent">
                   {p.q}
                   <span className="mt-1 text-accent transition-transform group-open:rotate-45" aria-hidden="true">
                     +

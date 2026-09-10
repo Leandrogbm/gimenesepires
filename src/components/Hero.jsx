@@ -33,7 +33,7 @@ export default function Hero() {
           </WhatsButton>
           <a
             href="#atuacao"
-            className="inline-block font-body text-sm uppercase tracking-[0.14em] text-muted border-b border-line pb-1 hover:text-accent hover:border-accent hover:translate-x-0.5 transition duration-200"
+            className="inline-flex items-center font-body text-xs font-semibold uppercase tracking-[0.14em] text-fg border border-line rounded-full px-6 py-3.5 hover:text-accent hover:border-accent hover:-translate-y-0.5"
           >
             Ver como ajudamos
           </a>

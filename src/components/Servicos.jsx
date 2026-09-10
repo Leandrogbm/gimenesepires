@@ -38,7 +38,7 @@ export default function Servicos() {
 
         <div className="mt-16 grid sm:grid-cols-2 gap-4">
           {SERVICOS.map((s) => (
-            <div key={s.titulo} className="bg-card rounded-sm border border-line p-8 flex flex-col gap-3">
+            <div key={s.titulo} className="card p-8 flex flex-col gap-3">
               <Check />
               <h3 className="font-display text-xl text-fg">{s.titulo}</h3>
               <p className="text-muted leading-relaxed text-[15px]">{s.texto}</p>

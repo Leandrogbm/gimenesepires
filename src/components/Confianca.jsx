@@ -30,7 +30,7 @@ export default function Confianca() {
 
         <div className="mt-16 grid md:grid-cols-2 gap-4">
           {PROMESSAS.map((p) => (
-            <div key={p.titulo} className="rounded-sm border border-line p-8 md:p-10">
+            <div key={p.titulo} className="card p-8 md:p-10">
               <h3 className="font-display italic text-xl text-accent mb-3">{p.titulo}</h3>
               <p className="text-fg/75 leading-relaxed">{p.texto}</p>
             </div>
