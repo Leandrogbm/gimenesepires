@@ -21,18 +21,18 @@ const PROMESSAS = [
 
 export default function Confianca() {
   return (
-    <section id="diferenciais" className="px-6 md:px-10 py-24 md:py-32 bg-ink text-paper">
+    <section id="diferenciais" className="px-6 md:px-10 py-24 md:py-32 bg-card">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">02 — Por que a Gimenes e Pires</p>
         <h2 className="font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] max-w-2xl text-balance">
-          Você não precisa <em className="italic text-brass">resolver isso sozinho.</em>
+          Você não precisa <em className="italic text-accent">resolver isso sozinho.</em>
         </h2>
 
         <div className="mt-16 grid md:grid-cols-2 gap-4">
           {PROMESSAS.map((p) => (
-            <div key={p.titulo} className="rounded-2xl border border-paper/15 p-8 md:p-10">
-              <h3 className="font-display italic text-xl text-brass mb-3">{p.titulo}</h3>
-              <p className="text-paper/75 leading-relaxed">{p.texto}</p>
+            <div key={p.titulo} className="rounded-sm border border-line p-8 md:p-10">
+              <h3 className="font-display italic text-xl text-accent mb-3">{p.titulo}</h3>
+              <p className="text-fg/75 leading-relaxed">{p.texto}</p>
             </div>
           ))}
         </div>

@@ -10,13 +10,13 @@ export function Wordmark({ className = "" }) {
       alt="Gimenes e Pires — Sociedade de Advogados"
       width="480"
       height="132"
-      className={`w-auto ${className}`}
+      className={`w-auto invert ${className}`}
     />
   );
 }
 
 // Apenas o ícone (coluna + estrelas + arco).
-export function LogoMark({ className = "", invert = false }) {
+export function LogoMark({ className = "", invert = true }) {
   return (
     <img
       src="/brand/icone.svg"

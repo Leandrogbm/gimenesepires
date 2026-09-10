@@ -7,7 +7,7 @@ const SOCIAS = [
     oab: CONTATO.oabNathalia,
     texto:
       "Conduz as frentes tributária e contratual, com foco em planejamento fiscal para empresas do Simples Nacional e assessoria jurídica contínua a pequenos e médios negócios da região.",
-    cor: "bg-wine",
+    cor: "bg-accent text-accent-ink",
   },
   {
     iniciais: "NP",
@@ -15,7 +15,7 @@ const SOCIAS = [
     oab: CONTATO.oabNicole,
     texto:
       "Responde pelo contencioso cível e pelo acompanhamento processual, da notificação extrajudicial à condução de ações em juízo.",
-    cor: "bg-ink",
+    cor: "bg-card text-accent border border-line",
   },
 ];
 
@@ -26,10 +26,10 @@ export default function Sobre() {
         <p className="eyebrow mb-12">As sócias</p>
 
         <div className="grid md:grid-cols-12 gap-10 mb-16">
-          <h2 className="md:col-span-6 font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] text-ink text-balance">
-            Você fala direto com <em className="italic text-wine">quem cuida do caso.</em>
+          <h2 className="md:col-span-6 font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] text-fg text-balance">
+            Você fala direto com <em className="italic text-accent">quem cuida do caso.</em>
           </h2>
-          <p className="md:col-span-5 md:col-start-8 text-ink/70 text-lg leading-relaxed self-end">
+          <p className="md:col-span-5 md:col-start-8 text-muted text-lg leading-relaxed self-end">
             O escritório é das duas, e é assim que trabalham desde o primeiro caso:
             cada processo passa pela Nathalia e pela Nicole — não por protocolo,
             por escolha.
@@ -38,17 +38,17 @@ export default function Sobre() {
 
         <div className="grid md:grid-cols-2 gap-4">
           {SOCIAS.map((s) => (
-            <div key={s.iniciais} className="bg-card rounded-2xl border border-ink/10 p-8 md:p-12 flex flex-col gap-6">
+            <div key={s.iniciais} className="bg-card rounded-sm border border-line p-8 md:p-12 flex flex-col gap-6">
               <div
-                className={`${s.cor} text-paper w-16 h-16 rounded-xl flex items-center justify-center font-display italic text-2xl`}
+                className={`${s.cor} w-16 h-16 rounded-sm flex items-center justify-center font-display italic text-2xl`}
               >
                 {s.iniciais}
               </div>
               <div>
-                <h3 className="font-display text-2xl text-ink">{s.nome}</h3>
+                <h3 className="font-display text-2xl text-fg">{s.nome}</h3>
                 <p className="eyebrow mt-2">Sócia-fundadora · {s.oab}</p>
               </div>
-              <p className="text-ink/70 leading-relaxed">{s.texto}</p>
+              <p className="text-muted leading-relaxed">{s.texto}</p>
             </div>
           ))}
         </div>

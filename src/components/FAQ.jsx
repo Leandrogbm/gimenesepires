@@ -35,19 +35,19 @@ export default function FAQ() {
 
         <div className="grid md:grid-cols-12 gap-10">
           <h2 className="md:col-span-4 font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3rem] md:leading-[1.05] text-balance">
-            Antes de <em className="italic text-wine">chamar no WhatsApp.</em>
+            Antes de <em className="italic text-accent">chamar no WhatsApp.</em>
           </h2>
 
-          <div className="md:col-span-7 md:col-start-6 border-t border-ink/15">
+          <div className="md:col-span-7 md:col-start-6 border-t border-line">
             {PERGUNTAS.map((p) => (
-              <details key={p.q} className="group border-b border-ink/15 py-5">
-                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-ink marker:content-none">
+              <details key={p.q} className="group border-b border-line py-5">
+                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-fg marker:content-none">
                   {p.q}
-                  <span className="mt-1 text-wine transition-transform group-open:rotate-45" aria-hidden="true">
+                  <span className="mt-1 text-accent transition-transform group-open:rotate-45" aria-hidden="true">
                     +
                   </span>
                 </summary>
-                <p className="mt-3 text-ink/70 leading-relaxed max-w-xl">{p.a}</p>
+                <p className="mt-3 text-muted leading-relaxed max-w-xl">{p.a}</p>
               </details>
             ))}
 

@@ -4,15 +4,21 @@ export default {
   theme: {
     extend: {
       colors: {
-        ink: "#1D1E20",     // quase-preto — texto e seções escuras
-        paper: "#F1F2F3",    // cinza claro neutro — fundo
-        wine: "#1D1E20",     // preto — acento e ênfase (destaque do nome)
-        brass: "#B08968",    // marrom claro — rótulos, números, detalhes em fundo escuro
-        card: "#FBFBFB",     // branco quase puro — cartões sobre o fundo cinza
+        // Modo escuro é a identidade — não há tema claro.
+        bg: "oklch(15.9% 0 0)", // preto levemente acinzentado — fundo
+        fg: "oklch(95.5% 0.008 90)", // branco quente — texto
+        muted: "oklch(72% 0.012 80)", // texto secundário / parágrafos
+        card: "oklch(21.5% 0 0)", // superfície de cartão / seções destacadas
+        accent: "oklch(75% 0.11 85)", // DOURADO — assinatura da marca, uso pontual
+        "accent-ink": "oklch(15.9% 0 0)", // texto escuro sobre dourado
+        line: "oklch(75% 0.11 85 / 0.22)", // bordas = dourado translúcido
       },
       fontFamily: {
-        display: ["Newsreader", "Georgia", "serif"],
-        body: ["Inter", "system-ui", "sans-serif"],
+        display: ['"Libre Baskerville"', "Georgia", "serif"],
+        body: ['"IBM Plex Sans"', "system-ui", "sans-serif"],
+      },
+      borderRadius: {
+        sm: "0.25rem",
       },
     },
   },

@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-paper/95 backdrop-blur border-b border-ink/10" : "bg-transparent"
+        scrolled ? "bg-bg/95 backdrop-blur border-b border-line" : "bg-transparent"
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10 flex items-center justify-between h-20">
@@ -38,12 +38,12 @@ export default function Header() {
           <Wordmark className="h-12 md:h-14" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-ink/70">
+        <nav className="hidden md:flex items-center gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted">
           {LINKS.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="hover:text-wine transition-colors focus-visible:text-wine"
+              className="hover:text-accent transition-colors focus-visible:text-accent"
             >
               {l.label}
             </a>
@@ -58,16 +58,16 @@ export default function Header() {
           aria-controls="menu-mobile"
           onClick={() => setOpen((v) => !v)}
         >
-          <span className={`h-px bg-ink transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
-          <span className={`h-px bg-ink transition-opacity ${open ? "opacity-0" : ""}`} />
-          <span className={`h-px bg-ink transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
+          <span className={`h-px bg-fg transition-transform ${open ? "translate-y-[7px] rotate-45" : ""}`} />
+          <span className={`h-px bg-fg transition-opacity ${open ? "opacity-0" : ""}`} />
+          <span className={`h-px bg-fg transition-transform ${open ? "-translate-y-[7px] -rotate-45" : ""}`} />
         </button>
       </div>
 
       {open && (
         <nav
           id="menu-mobile"
-          className="md:hidden bg-paper border-t border-ink/10 px-6 py-6 flex flex-col gap-5 font-body uppercase tracking-[0.14em] text-sm text-ink/80"
+          className="md:hidden bg-bg border-t border-line px-6 py-6 flex flex-col gap-5 font-body uppercase tracking-[0.14em] text-sm text-fg/80"
         >
           {LINKS.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)}>

@@ -7,14 +7,14 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-paper text-ink font-body antialiased;
+    @apply bg-bg text-fg font-body antialiased;
   }
   ::selection {
-    background-color: #1D1E20;
-    color: #F0F0EE;
+    background-color: oklch(75% 0.11 85);
+    color: oklch(15.9% 0 0);
   }
   :focus-visible {
-    outline: 2px solid #1D1E20;
+    outline: 2px solid oklch(75% 0.11 85);
     outline-offset: 3px;
   }
   section[id] {
@@ -23,13 +23,13 @@
 }
 
 @layer components {
-  /* rótulo de seção com número — "01 · Sobre" */
+  /* rótulo de seção com número — "02 — POR QUE A G&P" */
   .eyebrow {
-    @apply font-body text-xs uppercase tracking-[0.22em] text-brass;
+    @apply font-body text-xs uppercase tracking-[0.2em] font-semibold text-accent;
   }
   /* fio fino recorrente */
   .hairline {
-    @apply border-t border-ink/15;
+    @apply border-t border-line;
   }
 }
 

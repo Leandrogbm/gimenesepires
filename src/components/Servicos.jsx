@@ -29,7 +29,7 @@ const SERVICOS = [
 
 function Check() {
   return (
-    <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 text-wine" fill="none" aria-hidden="true">
+    <svg viewBox="0 0 24 24" className="w-5 h-5 shrink-0 text-accent" fill="none" aria-hidden="true">
       <path d="m5 13 4 4L19 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
@@ -41,15 +41,15 @@ export default function Servicos() {
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">01 — Como podemos ajudar</p>
         <h2 className="font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] max-w-2xl text-balance">
-          Do <em className="italic text-wine">planejamento</em> à sala de audiência.
+          Do <em className="italic text-accent">planejamento</em> à sala de audiência.
         </h2>
 
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {SERVICOS.map((s) => (
-            <div key={s.titulo} className="bg-card rounded-2xl border border-ink/10 p-8 flex flex-col gap-3">
+            <div key={s.titulo} className="bg-card rounded-sm border border-line p-8 flex flex-col gap-3">
               <Check />
-              <h3 className="font-display text-xl text-ink">{s.titulo}</h3>
-              <p className="text-ink/70 leading-relaxed text-[15px]">{s.texto}</p>
+              <h3 className="font-display text-xl text-fg">{s.titulo}</h3>
+              <p className="text-muted leading-relaxed text-[15px]">{s.texto}</p>
             </div>
           ))}
         </div>
