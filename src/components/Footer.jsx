@@ -4,9 +4,9 @@ export default function Footer() {
   const ano = new Date().getFullYear();
   const fundacao = 2019;
   return (
-    <footer className="px-6 md:px-10 py-12 hairline">
+    <footer className="px-6 md:px-10 py-10 sm:py-12 hairline">
       <div className="mx-auto max-w-6xl font-body text-xs uppercase tracking-[0.14em] text-muted">
-        <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <p>
             &copy; {fundacao}&ndash;{ano} <span className="text-accent font-medium">Gimenes e Pires</span> · Sociedade
             de Advogados · Nathalia Gimenes {CONTATO.oabNathalia} · Nicole Pires {CONTATO.oabNicole}

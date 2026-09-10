@@ -15,13 +15,13 @@ const LINHAS = [
 
 export default function Contato() {
   return (
-    <section id="contato" className="px-6 md:px-10 py-24 md:py-32 bg-card">
+    <section id="contato" className="px-6 md:px-10 py-16 sm:py-24 lg:py-32 bg-card">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">04 — Contato</p>
 
-        <div className="grid md:grid-cols-12 gap-10">
-          <div className="md:col-span-5 flex flex-col items-start">
-            <h2 className="font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] text-balance">
+        <div className="grid lg:grid-cols-12 gap-10">
+          <div className="lg:col-span-5 flex flex-col items-start">
+            <h2 className="font-display font-light h-sec text-balance">
               Vamos conversar sobre o <em className="italic text-accent">seu caso.</em>
             </h2>
             <p className="text-fg/70 leading-relaxed max-w-sm mt-6">
@@ -40,10 +40,10 @@ export default function Contato() {
             <LogoMark invert className="w-20 mt-12 opacity-80" />
           </div>
 
-          <div className="md:col-span-6 md:col-start-7">
+          <div className="lg:col-span-6 lg:col-start-7">
             <dl className="divide-y divide-line border-y border-line">
               {LINHAS.map((l) => (
-                <div key={l.label} className="py-5 flex items-baseline justify-between gap-4">
+                <div key={l.label} className="py-5 flex items-baseline justify-between gap-4 min-w-0">
                   <dt className="eyebrow">{l.dt}</dt>
                   <dd className="text-right">
                     {l.href ? (
@@ -60,9 +60,9 @@ export default function Contato() {
                   </dd>
                 </div>
               ))}
-              <div className="py-5 flex items-baseline justify-between gap-4">
+              <div className="py-5 flex items-baseline justify-between gap-4 min-w-0">
                 <dt className="eyebrow">Endereço</dt>
-                <dd className="text-right max-w-xs text-fg/80">
+                <dd className="text-right max-w-xs text-fg/80 break-words">
                   {CONTATO.endereco}
                   <span className="block text-fg/50">{CONTATO.edificio}</span>
                 </dd>

@@ -31,6 +31,16 @@
   .hairline {
     @apply border-t border-line;
   }
+  /* títulos fluidos — escalam suave entre celular, tablet, notebook e desktop */
+  .h-hero {
+    font-size: clamp(2.1rem, 1rem + 5.2vw, 4.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+  }
+  .h-sec {
+    font-size: clamp(1.8rem, 1.1rem + 3vw, 3.3rem);
+    line-height: 1.12;
+  }
   /* cartão padrão — bordas arredondadas + reação ao hover */
   .card {
     @apply bg-card border border-line rounded-2xl transition duration-200;

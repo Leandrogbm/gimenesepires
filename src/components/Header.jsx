@@ -38,7 +38,7 @@ export default function Header() {
           <Wordmark className="h-12 md:h-14" />
         </a>
 
-        <nav className="hidden md:flex items-center gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted">
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted">
           {LINKS.map((l) => (
             <a
               key={l.href}
@@ -52,7 +52,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="md:hidden flex flex-col gap-1.5 w-8"
+          className="lg:hidden flex flex-col gap-1.5 w-8"
           aria-label={open ? "Fechar menu" : "Abrir menu"}
           aria-expanded={open}
           aria-controls="menu-mobile"
@@ -67,7 +67,7 @@ export default function Header() {
       {open && (
         <nav
           id="menu-mobile"
-          className="md:hidden bg-bg border-t border-line px-6 py-6 flex flex-col gap-5 font-body uppercase tracking-[0.14em] text-sm text-fg/80"
+          className="lg:hidden bg-bg border-t border-line px-6 py-6 flex flex-col gap-5 font-body uppercase tracking-[0.14em] text-sm text-fg/80"
         >
           {LINKS.map((l) => (
             <a key={l.href} href={l.href} onClick={() => setOpen(false)}>

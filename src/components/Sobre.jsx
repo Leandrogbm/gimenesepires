@@ -21,24 +21,24 @@ const SOCIAS = [
 
 export default function Sobre() {
   return (
-    <section id="sobre" className="px-6 md:px-10 py-24 md:py-32 hairline">
+    <section id="sobre" className="px-6 md:px-10 py-16 sm:py-24 lg:py-32 hairline">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">As sócias</p>
 
-        <div className="grid md:grid-cols-12 gap-10 mb-16">
-          <h2 className="md:col-span-6 font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] text-fg text-balance">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 mb-12 sm:mb-16">
+          <h2 className="lg:col-span-6 font-display font-light h-sec text-fg text-balance">
             Você fala direto com <em className="italic text-accent">quem cuida do caso.</em>
           </h2>
-          <p className="md:col-span-5 md:col-start-8 text-muted text-lg leading-relaxed self-end">
+          <p className="lg:col-span-5 lg:col-start-8 text-muted text-lg leading-relaxed self-end">
             O escritório é das duas, e é assim que trabalham desde o primeiro caso:
             cada processo passa pela Nathalia e pela Nicole — não por protocolo,
             por escolha.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-2 gap-4">
           {SOCIAS.map((s) => (
-            <div key={s.iniciais} className="card p-8 md:p-12 flex flex-col gap-6">
+            <div key={s.iniciais} className="card p-7 sm:p-8 lg:p-12 flex flex-col gap-6">
               <div
                 className={`${s.cor} w-16 h-16 rounded-2xl flex items-center justify-center font-display italic text-2xl`}
               >

@@ -29,16 +29,16 @@ function Check() {
 
 export default function Servicos() {
   return (
-    <section id="atuacao" className="px-6 md:px-10 py-24 md:py-32 hairline">
+    <section id="atuacao" className="px-6 md:px-10 py-16 sm:py-24 lg:py-32 hairline">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">01 — Como podemos ajudar</p>
-        <h2 className="font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3.4rem] md:leading-[1.05] max-w-2xl text-balance">
+        <h2 className="font-display font-light h-sec max-w-2xl text-balance">
           Do <em className="italic text-accent">planejamento</em> à sala de audiência.
         </h2>
 
-        <div className="mt-16 grid sm:grid-cols-2 gap-4">
+        <div className="mt-12 sm:mt-16 grid sm:grid-cols-2 gap-4">
           {SERVICOS.map((s) => (
-            <div key={s.titulo} className="card p-8 flex flex-col gap-3">
+            <div key={s.titulo} className="card p-7 sm:p-8 flex flex-col gap-3">
               <Check />
               <h3 className="font-display text-xl text-fg">{s.titulo}</h3>
               <p className="text-muted leading-relaxed text-[15px]">{s.texto}</p>

@@ -4,18 +4,18 @@ import WhatsButton from "./WhatsButton";
 
 export default function Hero() {
   return (
-    <section id="topo" className="relative pt-36 md:pt-48 pb-20 md:pb-28 px-6 md:px-10 overflow-hidden">
+    <section id="topo" className="relative pt-32 sm:pt-36 md:pt-48 pb-16 sm:pb-20 md:pb-28 px-6 md:px-10 overflow-hidden">
       <div className="mx-auto max-w-6xl">
         <p className="mb-3 font-display text-2xl md:text-3xl text-accent">
           Gimenes <span className="italic">e</span> Pires
         </p>
         <p className="eyebrow mb-8">Sociedade de Advogados · São José do Rio Preto, SP · Atende todo o Brasil</p>
 
-        <h1 className="font-display font-light text-[2rem] leading-[1.12] sm:text-[2.7rem] sm:leading-[1.06] md:text-[4.6rem] md:leading-[1.03] text-fg max-w-4xl text-balance">
+        <h1 className="font-display font-light h-hero text-fg max-w-4xl text-balance">
           O seu caso merece <em className="italic text-accent">atenção de verdade.</em>
         </h1>
 
-        <div className="mt-10 grid md:grid-cols-12 gap-10 items-start">
+        <div className="mt-10 grid md:grid-cols-12 gap-8 md:gap-10 items-start">
           <p className="md:col-span-6 text-muted text-lg leading-relaxed">
             A Gimenes e Pires acompanha pessoas e empresas em todo o Brasil em
             questões cíveis, empresariais e contenciosas. Explique a sua situação

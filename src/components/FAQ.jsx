@@ -29,16 +29,16 @@ const PERGUNTAS = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="px-6 md:px-10 py-24 md:py-32 hairline">
+    <section id="faq" className="px-6 md:px-10 py-16 sm:py-24 lg:py-32 hairline">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">03 — Perguntas frequentes</p>
 
-        <div className="grid md:grid-cols-12 gap-10">
-          <h2 className="md:col-span-4 font-display font-light text-[1.9rem] leading-[1.15] sm:text-4xl sm:leading-tight md:text-[3rem] md:leading-[1.05] text-balance">
+        <div className="grid lg:grid-cols-12 gap-8 lg:gap-10">
+          <h2 className="lg:col-span-4 font-display font-light h-sec text-balance">
             Antes de <em className="italic text-accent">chamar no WhatsApp.</em>
           </h2>
 
-          <div className="md:col-span-7 md:col-start-6 border-t border-line">
+          <div className="lg:col-span-7 lg:col-start-6 border-t border-line">
             {PERGUNTAS.map((p) => (
               <details key={p.q} className="group border-b border-line py-5">
                 <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-fg marker:content-none hover:text-accent">
