@@ -3,19 +3,19 @@ import WhatsButton from "./WhatsButton";
 const SERVICOS = [
   {
     titulo: "Contratos",
-    texto: "Elaboração e revisão de contratos — comerciais, de prestação de serviço e entre sócios.",
+    texto: "Elaboração, revisão e negociação de contratos empresariais, de prestação de serviços e societários.",
   },
   {
     titulo: "Cobranças e negociações",
-    texto: "Notificação extrajudicial, acordo e recuperação de valores antes de virar processo.",
+    texto: "Notificação extrajudicial, negociação e recuperação de créditos, com solução amigável sempre que possível.",
   },
   {
     titulo: "Estruturação societária",
-    texto: "Abertura, alteração e organização de sociedades, com acordo de sócios bem feito.",
+    texto: "Constituição, alteração e reorganização de sociedades, com elaboração de acordos de sócios.",
   },
   {
     titulo: "Ações judiciais",
-    texto: "Condução do processo do início ao fim, com acompanhamento de cada andamento.",
+    texto: "Condução de ações judiciais do início ao trânsito em julgado, com acompanhamento de cada andamento processual.",
   },
 ];
 
@@ -31,9 +31,9 @@ export default function Servicos() {
   return (
     <section id="atuacao" className="px-6 md:px-10 py-16 sm:py-24 lg:py-32 hairline">
       <div className="mx-auto max-w-6xl">
-        <p className="eyebrow mb-12">01 — Como podemos ajudar</p>
+        <p className="eyebrow mb-12">01 — Áreas de atuação</p>
         <h2 className="font-display font-light h-sec max-w-2xl text-balance">
-          Do <em className="italic text-accent">planejamento</em> à sala de audiência.
+          Da <em className="italic text-accent">consultoria preventiva</em> à sala de audiência.
         </h2>
 
         <div className="mt-12 sm:mt-16 grid sm:grid-cols-2 gap-4">
@@ -47,8 +47,8 @@ export default function Servicos() {
         </div>
 
         <div className="mt-12">
-          <WhatsButton mensagem="Olá! Vi os serviços no site e queria entender qual se aplica ao meu caso.">
-            Não sei por onde começar — me ajudem
+          <WhatsButton mensagem="Olá, consultei as áreas de atuação no site e gostaria de entender qual se aplica ao meu caso.">
+            Preciso de orientação sobre o meu caso
           </WhatsButton>
         </div>
       </div>

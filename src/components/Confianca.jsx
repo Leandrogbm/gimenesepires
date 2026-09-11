@@ -3,19 +3,19 @@ import WhatsButton from "./WhatsButton";
 const PROMESSAS = [
   {
     titulo: "Sem juridiquês",
-    texto: "A gente explica o que está acontecendo e quais são as opções, em português claro.",
+    texto: "Explicamos os fatos e as opções disponíveis em linguagem clara, sem juridiquês.",
   },
   {
-    titulo: "Toda a equipe em cada caso",
-    texto: "A equipe acompanha o processo de perto — não só a estratégia inicial.",
+    titulo: "Acompanhamento próximo em cada etapa",
+    texto: "A equipe acompanha o processo de perto, do planejamento inicial à conclusão.",
   },
   {
-    titulo: "Você sempre sabe onde está",
-    texto: "Cliente informado a cada andamento relevante, sem precisar ligar cobrando notícia.",
+    titulo: "Transparência processual",
+    texto: "O cliente é informado a cada andamento relevante, sem necessidade de solicitar atualizações.",
   },
   {
-    titulo: "Sigilo total",
-    texto: "O que você conta fica entre você e o escritório. Seus dados são tratados conforme a LGPD.",
+    titulo: "Confidencialidade e sigilo",
+    texto: "As informações compartilhadas são protegidas pelo sigilo profissional e tratadas em conformidade com a LGPD.",
   },
 ];
 
@@ -25,7 +25,7 @@ export default function Confianca() {
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">02 — Por que a Gimenes e Pires</p>
         <h2 className="font-display font-light h-sec max-w-2xl text-balance">
-          Você não precisa <em className="italic text-accent">resolver isso sozinho.</em>
+          Você não precisa <em className="italic text-accent">enfrentar essa questão sozinho.</em>
         </h2>
 
         <div className="mt-12 sm:mt-16 grid sm:grid-cols-2 gap-4">
@@ -40,9 +40,9 @@ export default function Confianca() {
         <div className="mt-12">
           <WhatsButton
             variant="link"
-            mensagem="Olá! Gostaria de conversar sobre o meu caso com o escritório."
+            mensagem="Olá, gostaria de solicitar uma orientação inicial sobre o meu caso."
           >
-            Conversar agora, sem compromisso
+            Solicitar orientação inicial
           </WhatsButton>
         </div>
       </div>

@@ -3,9 +3,9 @@ import { Wordmark } from "./Logo";
 import WhatsButton from "./WhatsButton";
 
 const LINKS = [
-  { href: "#atuacao", label: "Como ajudamos" },
+  { href: "#atuacao", label: "Atuação" },
   { href: "#sobre", label: "Advogados" },
-  { href: "#diferenciais", label: "Por que a G&P" },
+  { href: "#diferenciais", label: "Diferenciais" },
   { href: "#faq", label: "Dúvidas" },
   { href: "#contato", label: "Contato" },
 ];

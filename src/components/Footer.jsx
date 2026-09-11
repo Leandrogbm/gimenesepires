@@ -14,9 +14,10 @@ export default function Footer() {
           <p>São José do Rio Preto, SP</p>
         </div>
         <p className="mt-4 normal-case tracking-normal text-muted max-w-xl">
-          Este site é informativo e não substitui a consulta a um advogado. O contato
-          inicial não gera vínculo nem cobrança. Seus dados são tratados com sigilo,
-          conforme a LGPD.
+          Este site tem caráter informativo e não substitui a consulta jurídica
+          individualizada. O contato inicial não gera vínculo contratual nem ônus
+          financeiro. Os dados fornecidos são tratados com sigilo, em conformidade
+          com a Lei Geral de Proteção de Dados (LGPD).
         </p>
       </div>
     </footer>

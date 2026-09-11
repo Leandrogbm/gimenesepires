@@ -7,7 +7,7 @@ const SOCIOS = [
     genero: "Sócia-fundadora",
     oab: CONTATO.oabNathalia,
     texto:
-      "Atua com rigor técnico e proximidade, buscando sempre a solução mais clara e segura para cada cliente.",
+      "Atua com rigor técnico e proximidade, priorizando a solução mais clara e juridicamente segura para cada cliente.",
     cor: "bg-accent text-accent-ink",
   },
   {
@@ -16,7 +16,7 @@ const SOCIOS = [
     genero: "Sócia-fundadora",
     oab: CONTATO.oabNicole,
     texto:
-      "Conduz cada caso com atenção aos detalhes e compromisso com o resultado, do primeiro contato até a decisão final.",
+      "Conduz cada caso com precisão técnica e compromisso com o resultado, do primeiro atendimento até o desfecho final.",
     cor: "bg-card text-accent border border-line",
   },
   {
@@ -24,7 +24,7 @@ const SOCIOS = [
     nome: "Marco A. Pires",
     genero: "Advogado",
     oab: CONTATO.oabMarco,
-    texto: "Traz experiência e visão estratégica para a definição do melhor caminho em cada processo.",
+    texto: "Contribui com experiência e visão estratégica na definição do melhor curso de ação em cada processo.",
     cor: "bg-card text-accent border border-line",
   },
   {
@@ -32,7 +32,7 @@ const SOCIOS = [
     nome: "Giovana Alessio",
     genero: "Advogada",
     oab: CONTATO.oabGiovana,
-    texto: "Cuida de cada etapa com organização e cuidado, mantendo o cliente sempre informado.",
+    texto: "Zela por cada etapa processual com organização e rigor, mantendo o cliente permanentemente informado.",
     cor: "bg-accent text-accent-ink",
   },
 ];
@@ -45,12 +45,12 @@ export default function Sobre() {
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-10 mb-12 sm:mb-16">
           <h2 className="lg:col-span-6 font-display font-light h-sec text-fg text-balance">
-            Você fala direto com <em className="italic text-accent">quem cuida do caso.</em>
+            Você conversa diretamente com <em className="italic text-accent">quem conduz o seu caso.</em>
           </h2>
           <p className="lg:col-span-5 lg:col-start-8 text-muted text-lg leading-relaxed self-end">
-            O escritório é dos sócios, e é assim que trabalham desde o primeiro caso:
-            cada processo passa por quem está à frente dele — não por protocolo,
-            por escolha.
+            A condução dos casos é feita diretamente pelos profissionais
+            responsáveis, desde o primeiro atendimento — por escolha do
+            escritório, não por protocolo.
           </p>
         </div>
 

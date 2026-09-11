@@ -2,28 +2,28 @@ import WhatsButton from "./WhatsButton";
 
 const PERGUNTAS = [
   {
-    q: "A primeira conversa tem custo?",
-    a: "O contato inicial pelo WhatsApp para entender a sua situação e explicar como podemos ajudar é sem compromisso. Honorários só são combinados depois, por escrito, se você decidir seguir.",
+    q: "O primeiro atendimento tem custo?",
+    a: "O contato inicial, destinado à análise preliminar da situação, não possui custo. Os honorários são definidos posteriormente, por escrito, caso haja decisão de contratação dos serviços.",
   },
   {
-    q: "O escritório atende só em São José do Rio Preto?",
-    a: "O atendimento presencial é em São José do Rio Preto, mas acompanhamos clientes de todo o Brasil por videochamada e WhatsApp, com a mesma proximidade.",
+    q: "O atendimento é restrito a São José do Rio Preto?",
+    a: "O atendimento presencial ocorre em São José do Rio Preto, mas o escritório presta assistência a clientes de todo o território nacional por videochamada e WhatsApp, com o mesmo nível de proximidade.",
   },
   {
-    q: "Vocês atendem pessoa física ou só empresa?",
-    a: "Os dois. Pequenas e médias empresas são boa parte dos casos, mas também cuidamos de contratos, cobranças e ações de pessoas físicas.",
+    q: "O escritório atende pessoas físicas ou apenas empresas?",
+    a: "Ambos. Pequenas e médias empresas representam parte significativa dos casos, mas também são conduzidos contratos, cobranças e ações envolvendo pessoas físicas.",
   },
   {
-    q: "Quanto tempo demora um processo?",
-    a: "Depende do tipo de ação e da vara. Na primeira conversa damos uma estimativa realista para o seu caso — e evitamos processo sempre que dá para resolver por acordo.",
+    q: "Qual a duração média de um processo?",
+    a: "O prazo depende da natureza da ação e da vara responsável. Já no primeiro contato é apresentada uma estimativa realista, priorizando-se a solução extrajudicial sempre que viável.",
   },
   {
-    q: "Como recebo notícias do andamento?",
-    a: "Você é avisado a cada movimentação relevante pelo canal que preferir. Não precisa ficar perguntando.",
+    q: "Como o cliente é informado sobre o andamento do processo?",
+    a: "O cliente é comunicado a cada movimentação relevante, pelo canal de sua preferência, sem necessidade de solicitação.",
   },
   {
-    q: "Meus dados e o que eu contar ficam em sigilo?",
-    a: "Sim. Tudo que você compartilha é protegido pelo sigilo profissional e tratado conforme a LGPD.",
+    q: "As informações compartilhadas permanecem em sigilo?",
+    a: "Sim. Todas as informações compartilhadas são protegidas pelo sigilo profissional e tratadas em conformidade com a Lei Geral de Proteção de Dados (LGPD).",
   },
 ];
 
@@ -35,7 +35,7 @@ export default function FAQ() {
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-10">
           <h2 className="lg:col-span-4 font-display font-light h-sec text-balance">
-            Antes de <em className="italic text-accent">chamar no WhatsApp.</em>
+            Esclarecimentos antes do <em className="italic text-accent">primeiro contato.</em>
           </h2>
 
           <div className="lg:col-span-7 lg:col-start-6 border-t border-line">
@@ -54,9 +54,9 @@ export default function FAQ() {
             <WhatsButton
               variant="link"
               className="mt-8"
-              mensagem="Olá! Tenho uma dúvida que não estava nas perguntas frequentes do site."
+              mensagem="Olá, tenho uma dúvida que não foi respondida nas perguntas frequentes do site."
             >
-              Minha dúvida não está aqui
+              Minha dúvida não foi respondida
             </WhatsButton>
           </div>
         </div>

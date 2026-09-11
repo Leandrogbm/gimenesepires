@@ -22,19 +22,19 @@ export default function Contato() {
         <div className="grid lg:grid-cols-12 gap-10">
           <div className="lg:col-span-5 flex flex-col items-start">
             <h2 className="font-display font-light h-sec text-balance">
-              Vamos conversar sobre o <em className="italic text-accent">seu caso.</em>
+              Fale conosco sobre <em className="italic text-accent">o seu caso.</em>
             </h2>
             <p className="text-fg/70 leading-relaxed max-w-sm mt-6">
-              A forma mais rápida é o WhatsApp: você explica a situação e a gente
-              responde com os próximos passos. Também atendemos presencialmente e
-              por videochamada.
+              O canal mais direto é o WhatsApp: descreva a sua situação e receba
+              orientação sobre os próximos passos. O atendimento também é
+              realizado presencialmente e por videochamada.
             </p>
             <WhatsButton
               variant="onDark"
               className="mt-8"
-              mensagem="Olá! Vim pelo site da Gimenes e Pires e gostaria de falar sobre o meu caso."
+              mensagem="Olá, vim pelo site da Gimenes e Pires e gostaria de tratar sobre o meu caso."
             >
-              Explicar meu caso
+              Expor meu caso
             </WhatsButton>
             <GoogleReviews className="mt-8" tone="paper" />
             <LogoMark invert className="w-20 mt-12 opacity-80" />

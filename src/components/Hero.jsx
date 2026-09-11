@@ -9,17 +9,18 @@ export default function Hero() {
         <p className="mb-3 font-display text-2xl md:text-3xl text-accent">
           Gimenes <span className="italic">e</span> Pires
         </p>
-        <p className="eyebrow mb-8">Sociedade de Advogados · São José do Rio Preto, SP · Atende todo o Brasil</p>
+        <p className="eyebrow mb-8">Sociedade de Advogados · São José do Rio Preto, SP · Atuação em todo o território nacional</p>
 
         <h1 className="font-display font-light h-hero text-fg max-w-4xl text-balance">
-          O seu caso merece <em className="italic text-accent">atenção de verdade.</em>
+          Seu caso merece <em className="italic text-accent">o rigor técnico que a advocacia exige.</em>
         </h1>
 
         <div className="mt-10 grid md:grid-cols-12 gap-8 md:gap-10 items-start">
           <p className="md:col-span-6 text-muted text-lg leading-relaxed">
-            A Gimenes e Pires acompanha pessoas e empresas em todo o Brasil em
-            questões cíveis, empresariais e contenciosas. Explique a sua situação
-            pelo WhatsApp — a gente diz, com clareza, como pode ajudar.
+            A Gimenes e Pires presta assessoria jurídica a pessoas físicas e
+            jurídicas em todo o território nacional, com atuação consultiva e
+            contenciosa. Relate a sua situação pelo WhatsApp e receba uma
+            orientação clara sobre os próximos passos.
           </p>
 
           <div className="hidden md:flex md:col-span-4 md:col-start-9 justify-center">
@@ -28,14 +29,14 @@ export default function Hero() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-          <WhatsButton mensagem="Olá! Vim pelo site e gostaria de explicar a minha situação para o escritório.">
-            Explicar meu caso agora
+          <WhatsButton mensagem="Olá, vim pelo site e gostaria de relatar a minha situação ao escritório.">
+            Expor meu caso agora
           </WhatsButton>
           <a
             href="#atuacao"
             className="inline-flex items-center font-body text-xs font-semibold uppercase tracking-[0.14em] text-fg border border-line rounded-full px-6 py-3.5 hover:text-accent hover:border-accent hover:-translate-y-0.5"
           >
-            Ver como ajudamos
+            Conhecer nossa atuação
           </a>
         </div>
 
