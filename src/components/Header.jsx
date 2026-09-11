@@ -34,7 +34,7 @@ export default function Header({ rota }) {
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10 flex items-center justify-between h-20">
         <a href="#/" aria-label="Gimenes e Pires — Sociedade de Advogados, ir para a home" className="hover:opacity-80">
-          <Wordmark className="h-12 md:h-14" />
+          <Wordmark className="h-14 md:h-16" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-6 xl:gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted">
