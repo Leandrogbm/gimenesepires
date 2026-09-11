@@ -20,6 +20,16 @@ export default {
       borderRadius: {
         sm: "0.25rem",
       },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+      },
+      animation: {
+        // percorre a faixa duplicada (ver Clientes.jsx) — -50% = uma volta completa
+        marquee: "marquee 36s linear infinite",
+      },
     },
   },
   plugins: [],
