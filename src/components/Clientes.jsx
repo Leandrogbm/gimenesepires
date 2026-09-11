@@ -23,14 +23,13 @@ const FAIXA = [...CLIENTES, ...CLIENTES];
 
 function Logo({ c }) {
   return (
-    <div className="flex w-24 sm:w-28 shrink-0 flex-col items-center gap-2 text-center">
+    <div className="flex w-24 sm:w-28 shrink-0 items-center justify-center">
       <img
         src={`/brand/clientes/${c.arquivo}.jpg`}
         alt={c.nome}
         loading="lazy"
         className="h-16 w-16 sm:h-20 sm:w-20 rounded-full border border-line object-cover"
       />
-      <span className="text-[11px] uppercase tracking-[0.1em] text-muted leading-tight">{c.nome}</span>
     </div>
   );
 }
