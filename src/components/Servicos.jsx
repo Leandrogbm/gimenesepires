@@ -1,4 +1,5 @@
 import WhatsButton from "./WhatsButton";
+import Reveal from "./Reveal";
 
 // Ícones minimalistas (linha, mesmo traço do resto do site) — um por área,
 // só para dar uma referência visual rápida no cartão, sem ilustração literal.
@@ -138,18 +139,22 @@ export default function Servicos() {
   return (
     <section id="atuacao" className="px-6 md:px-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 hairline">
       <div className="mx-auto max-w-6xl">
-        <p className="eyebrow mb-12">01 — Áreas de atuação</p>
-        <h2 className="font-display font-light h-sec max-w-2xl text-balance">
-          Da <em className="italic text-accent">consultoria preventiva</em> à sala de audiência.
-        </h2>
+        <Reveal>
+          <p className="eyebrow mb-12">Áreas de atuação</p>
+          <h2 className="font-display font-light h-sec max-w-2xl text-balance">
+            Da <em className="italic text-accent">consultoria preventiva</em> à sala de audiência.
+          </h2>
+        </Reveal>
 
         <div className="mt-12 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {SERVICOS.map((s) => (
-            <div key={s.titulo} className="card p-7 sm:p-8 flex flex-col gap-3">
-              <s.Icone />
-              <h3 className="font-display text-xl text-fg">{s.titulo}</h3>
-              <p className="text-muted leading-relaxed text-[15px]">{s.texto}</p>
-            </div>
+          {SERVICOS.map((s, i) => (
+            <Reveal key={s.titulo} delay={i * 70}>
+              <div className="card p-7 sm:p-8 flex flex-col gap-3">
+                <s.Icone />
+                <h3 className="font-display text-xl text-fg">{s.titulo}</h3>
+                <p className="text-muted leading-relaxed text-[15px]">{s.texto}</p>
+              </div>
+            </Reveal>
           ))}
         </div>
 

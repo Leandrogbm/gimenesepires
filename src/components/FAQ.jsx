@@ -1,4 +1,5 @@
 import WhatsButton from "./WhatsButton";
+import Reveal from "./Reveal";
 
 const PERGUNTAS = [
   {
@@ -31,24 +32,30 @@ export default function FAQ() {
   return (
     <section id="faq" className="px-6 md:px-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 hairline">
       <div className="mx-auto max-w-6xl">
-        <p className="eyebrow mb-12">03 — Perguntas frequentes</p>
+        <Reveal>
+          <p className="eyebrow mb-12">Perguntas frequentes</p>
+        </Reveal>
 
         <div className="grid lg:grid-cols-12 gap-8 lg:gap-10">
-          <h2 className="lg:col-span-4 font-display font-light h-sec text-balance">
-            Esclarecimentos antes do <em className="italic text-accent">primeiro contato.</em>
-          </h2>
+          <Reveal className="lg:col-span-4">
+            <h2 className="font-display font-light h-sec text-balance">
+              Esclarecimentos antes do <em className="italic text-accent">primeiro contato.</em>
+            </h2>
+          </Reveal>
 
           <div className="lg:col-span-7 lg:col-start-6 border-t border-line">
-            {PERGUNTAS.map((p) => (
-              <details key={p.q} className="group border-b border-line py-5">
-                <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-fg marker:content-none hover:text-accent">
-                  {p.q}
-                  <span className="mt-1 text-accent transition-transform group-open:rotate-45" aria-hidden="true">
-                    +
-                  </span>
-                </summary>
-                <p className="mt-3 text-muted leading-relaxed max-w-xl">{p.a}</p>
-              </details>
+            {PERGUNTAS.map((p, i) => (
+              <Reveal key={p.q} delay={i * 60}>
+                <details className="group border-b border-line py-5">
+                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none font-display text-lg text-fg marker:content-none hover:text-accent">
+                    {p.q}
+                    <span className="mt-1 text-accent transition-transform group-open:rotate-45" aria-hidden="true">
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-muted leading-relaxed max-w-xl">{p.a}</p>
+                </details>
+              </Reveal>
             ))}
 
             <WhatsButton

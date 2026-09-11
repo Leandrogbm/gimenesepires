@@ -2,6 +2,7 @@ import { CONTATO } from "../data/contato";
 import { LogoMark } from "./Logo";
 import GoogleReviews from "./GoogleReviews";
 import WhatsButton from "./WhatsButton";
+import Reveal from "./Reveal";
 
 function IconeRede({ children }) {
   return (
@@ -74,30 +75,34 @@ export default function Contato() {
   return (
     <section id="contato" className="px-6 md:px-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 bg-card">
       <div className="mx-auto max-w-6xl">
-        <p className="eyebrow mb-12">04 — Contato</p>
+        <Reveal>
+          <p className="eyebrow mb-12">Contato</p>
+        </Reveal>
 
         <div className="grid lg:grid-cols-12 gap-10">
-          <div className="lg:col-span-5 flex flex-col items-start">
-            <h2 className="font-display font-light h-sec text-balance">
-              Fale conosco sobre <em className="italic text-accent">o seu caso.</em>
-            </h2>
-            <p className="text-fg/70 leading-relaxed max-w-sm mt-6">
-              O canal mais direto é o WhatsApp: descreva a sua situação e receba
-              orientação sobre os próximos passos. O atendimento também é
-              realizado presencialmente e por videochamada.
-            </p>
-            <WhatsButton
-              variant="onDark"
-              className="mt-8"
-              mensagem="Olá, vim pelo site da Gimenes e Pires e gostaria de falar sobre o meu caso."
-            >
-              Falar com o escritório
-            </WhatsButton>
-            <GoogleReviews className="mt-8" tone="paper" />
-            <LogoMark invert className="w-20 mt-12 opacity-80" />
-          </div>
+          <Reveal className="lg:col-span-5">
+            <div className="flex flex-col items-start">
+              <h2 className="font-display font-light h-sec text-balance">
+                Fale conosco sobre <em className="italic text-accent">o seu caso.</em>
+              </h2>
+              <p className="text-fg/70 leading-relaxed max-w-sm mt-6">
+                O canal mais direto é o WhatsApp: descreva a sua situação e receba
+                orientação sobre os próximos passos. O atendimento também é
+                realizado presencialmente e por videochamada.
+              </p>
+              <WhatsButton
+                variant="onDark"
+                className="mt-8"
+                mensagem="Olá, vim pelo site da Gimenes e Pires e gostaria de falar sobre o meu caso."
+              >
+                Falar com o escritório
+              </WhatsButton>
+              <GoogleReviews className="mt-8" tone="paper" />
+              <LogoMark invert className="w-20 mt-12 opacity-80" />
+            </div>
+          </Reveal>
 
-          <div className="lg:col-span-6 lg:col-start-7">
+          <Reveal delay={120} className="lg:col-span-6 lg:col-start-7">
             <dl className="divide-y divide-line border-y border-line">
               {LINHAS.map((l) => (
                 <div key={l.label} className="py-5 flex items-baseline justify-between gap-4 min-w-0">
@@ -149,7 +154,7 @@ export default function Contato() {
               referrerPolicy="no-referrer-when-downgrade"
               className="mt-8 w-full h-64 rounded-2xl border border-line bg-bg/5 hover:border-accent"
             />
-          </div>
+          </Reveal>
         </div>
       </div>
     </section>
