@@ -28,7 +28,7 @@ export default {
       },
       animation: {
         // percorre a faixa duplicada (ver Clientes.jsx) — -50% = uma volta completa
-        marquee: "marquee 36s linear infinite",
+        marquee: "marquee 26s linear infinite",
       },
     },
   },
