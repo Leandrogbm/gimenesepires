@@ -3,6 +3,63 @@ import { LogoMark } from "./Logo";
 import GoogleReviews from "./GoogleReviews";
 import WhatsButton from "./WhatsButton";
 
+function IconeRede({ children }) {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      className="w-[18px] h-[18px]"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.7"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      {children}
+    </svg>
+  );
+}
+
+const IconeInstagram = () => (
+  <IconeRede>
+    <rect x="4" y="4" width="16" height="16" rx="5" />
+    <circle cx="12" cy="12" r="4" />
+    <circle cx="16.3" cy="7.7" r="0.6" fill="currentColor" stroke="none" />
+  </IconeRede>
+);
+
+const IconeFacebook = () => (
+  <IconeRede>
+    <circle cx="12" cy="12" r="9" />
+    <path
+      d="M13.8 7.5h-1.3c-1 0-1.8.8-1.8 1.8V11H9v2.2h1.7V20h2.4v-6.8h1.9L15.3 11h-2.2V9.6c0-.4.3-.7.7-.7h1.3z"
+      fill="currentColor"
+      stroke="none"
+    />
+  </IconeRede>
+);
+
+const IconeWaze = () => (
+  <IconeRede>
+    <path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z" />
+    <circle cx="12" cy="9" r="2.4" />
+  </IconeRede>
+);
+
+const IconeGoogle = () => (
+  <IconeRede>
+    <path d="M4 6l5-2 6 2 5-2v14l-5 2-6-2-5 2Z" />
+    <path d="M9 4v14M15 6v14" />
+  </IconeRede>
+);
+
+const REDES = [
+  { nome: "Instagram", href: CONTATO.instagram, Icone: IconeInstagram },
+  { nome: "Facebook", href: CONTATO.facebook, Icone: IconeFacebook },
+  { nome: "Waze — como chegar", href: CONTATO.waze, Icone: IconeWaze },
+  { nome: "Ver no Google", href: CONTATO.google.url, Icone: IconeGoogle },
+];
+
 const LINHAS = [
   ...CONTATO.telefones.map((t) => ({
     dt: t.nome,
@@ -69,19 +126,20 @@ export default function Contato() {
               </div>
             </dl>
 
-            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-body text-xs uppercase tracking-[0.14em] text-muted">
-              <a href={CONTATO.instagram} target="_blank" rel="noreferrer" className="hover:text-accent">
-                Instagram
-              </a>
-              <a href={CONTATO.facebook} target="_blank" rel="noreferrer" className="hover:text-accent">
-                Facebook
-              </a>
-              <a href={CONTATO.waze} target="_blank" rel="noreferrer" className="hover:text-accent">
-                Waze
-              </a>
-              <a href={CONTATO.google.url} target="_blank" rel="noreferrer" className="hover:text-accent">
-                Ver no Google
-              </a>
+            <div className="mt-6 flex flex-wrap gap-3">
+              {REDES.map((r) => (
+                <a
+                  key={r.nome}
+                  href={r.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={r.nome}
+                  title={r.nome}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-accent hover:text-accent"
+                >
+                  <r.Icone />
+                </a>
+              ))}
             </div>
 
             <iframe

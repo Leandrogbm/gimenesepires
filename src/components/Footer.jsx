@@ -19,18 +19,6 @@ export default function Footer() {
           financeiro. Os dados fornecidos são tratados com sigilo, em conformidade
           com a Lei Geral de Proteção de Dados (LGPD).
         </p>
-        <p className="mt-2 normal-case tracking-normal text-muted/70 max-w-xl">
-          Ilustração do botão de WhatsApp:{" "}
-          <a
-            href="https://commons.wikimedia.org/wiki/File:A_Confident_Cartoon_Businesswoman.svg"
-            target="_blank"
-            rel="noreferrer"
-            className="underline hover:text-accent"
-          >
-            Clip Art by Vector Toons
-          </a>
-          , licença CC BY-SA 4.0.
-        </p>
       </div>
     </footer>
   );
