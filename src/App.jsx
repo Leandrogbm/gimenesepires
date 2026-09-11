@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import WhatsFloat from "./components/WhatsFloat";
 import Home from "./pages/Home";
 import Servicos from "./components/Servicos";
 import Sobre from "./components/Sobre";
@@ -58,6 +59,7 @@ export default function App() {
         <Pagina />
       </main>
       <Footer />
+      <WhatsFloat />
     </div>
   );
 }
