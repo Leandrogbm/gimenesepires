@@ -1,4 +1,5 @@
 import Reveal from "./Reveal";
+import Clientes from "./Clientes";
 
 const PARAGRAFOS = [
   "A Gimenes e Pires é um escritório de advocacia sediado em São José do Rio Preto (SP), fundado e liderado por duas advogadas: Nathália Fernandes Gimenes e Nicole Pires. Juntas, as sócias constituíram uma banca conduzida integralmente por mulheres, com uma proposta que une técnica jurídica a um olhar humano sobre cada caso — combinando empatia, excelência e visão estratégica no atendimento aos clientes.",
@@ -9,23 +10,27 @@ const PARAGRAFOS = [
 
 export default function SobreEscritorio() {
   return (
-    <section id="sobre-escritorio" className="px-6 md:px-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 hairline">
-      <div className="mx-auto max-w-6xl">
-        <Reveal>
-          <p className="eyebrow mb-12">Sobre</p>
-          <h2 className="font-display font-light h-sec max-w-3xl text-balance">
-            Gimenes e Pires <em className="italic text-accent">Sociedade de Advogados.</em>
-          </h2>
-        </Reveal>
+    <>
+      <section id="sobre-escritorio" className="px-6 md:px-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 hairline">
+        <div className="mx-auto max-w-6xl">
+          <Reveal>
+            <p className="eyebrow mb-12">Sobre</p>
+            <h2 className="font-display font-light h-sec max-w-3xl text-balance">
+              Gimenes e Pires <em className="italic text-accent">Sociedade de Advogados.</em>
+            </h2>
+          </Reveal>
 
-        <div className="mt-10 max-w-3xl space-y-6">
-          {PARAGRAFOS.map((p, i) => (
-            <Reveal key={p.slice(0, 24)} delay={i * 90}>
-              <p className="text-muted leading-relaxed">{p}</p>
-            </Reveal>
-          ))}
+          <div className="mt-10 max-w-3xl space-y-6">
+            {PARAGRAFOS.map((p, i) => (
+              <Reveal key={p.slice(0, 24)} delay={i * 90}>
+                <p className="text-muted leading-relaxed">{p}</p>
+              </Reveal>
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <Clientes />
+    </>
   );
 }
