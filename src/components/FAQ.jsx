@@ -29,7 +29,7 @@ const PERGUNTAS = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="px-6 md:px-10 py-16 sm:py-24 lg:py-32 hairline">
+    <section id="faq" className="px-6 md:px-10 pt-28 pb-16 sm:pt-32 sm:pb-24 lg:pt-40 lg:pb-32 hairline">
       <div className="mx-auto max-w-6xl">
         <p className="eyebrow mb-12">03 — Perguntas frequentes</p>
 

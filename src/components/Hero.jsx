@@ -33,7 +33,7 @@ export default function Hero() {
             Falar sobre o meu caso
           </WhatsButton>
           <a
-            href="#atuacao"
+            href="#/atuacao"
             className="inline-flex items-center font-body text-xs font-semibold uppercase tracking-[0.14em] text-fg border border-line rounded-full px-6 py-3.5 hover:text-accent hover:border-accent hover:-translate-y-0.5"
           >
             Conhecer nossa atuação

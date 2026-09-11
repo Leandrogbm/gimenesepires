@@ -3,14 +3,14 @@ import { Wordmark } from "./Logo";
 import WhatsButton from "./WhatsButton";
 
 const LINKS = [
-  { href: "#atuacao", label: "Atuação" },
-  { href: "#sobre", label: "Advogados" },
-  { href: "#diferenciais", label: "Diferenciais" },
-  { href: "#faq", label: "Dúvidas" },
-  { href: "#contato", label: "Contato" },
+  { path: "/", label: "Home" },
+  { path: "/atuacao", label: "Áreas de Atuação" },
+  { path: "/advogados", label: "Quadro de Advogados" },
+  { path: "/duvidas", label: "Dúvidas" },
+  { path: "/contato", label: "Contato" },
 ];
 
-export default function Header() {
+export default function Header({ rota }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -34,16 +34,19 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-6xl px-6 md:px-10 flex items-center justify-between h-20">
-        <a href="#topo" aria-label="Gimenes e Pires — Sociedade de Advogados, ir ao topo" className="hover:opacity-80">
+        <a href="#/" aria-label="Gimenes e Pires — Sociedade de Advogados, ir para a home" className="hover:opacity-80">
           <Wordmark className="h-12 md:h-14" />
         </a>
 
         <nav className="hidden lg:flex items-center gap-6 xl:gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted">
           {LINKS.map((l) => (
             <a
-              key={l.href}
-              href={l.href}
-              className="hover:text-accent transition-colors focus-visible:text-accent"
+              key={l.path}
+              href={`#${l.path}`}
+              aria-current={rota === l.path ? "page" : undefined}
+              className={`transition-colors focus-visible:text-accent hover:text-accent ${
+                rota === l.path ? "text-accent" : ""
+              }`}
             >
               {l.label}
             </a>
@@ -70,7 +73,13 @@ export default function Header() {
           className="lg:hidden bg-bg border-t border-line px-6 py-6 flex flex-col gap-5 font-body uppercase tracking-[0.14em] text-sm text-fg/80"
         >
           {LINKS.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
+            <a
+              key={l.path}
+              href={`#${l.path}`}
+              aria-current={rota === l.path ? "page" : undefined}
+              onClick={() => setOpen(false)}
+              className={rota === l.path ? "text-accent" : ""}
+            >
               {l.label}
             </a>
           ))}

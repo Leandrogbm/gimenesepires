@@ -1,13 +1,50 @@
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
 import Servicos from "./components/Servicos";
 import Sobre from "./components/Sobre";
-import Confianca from "./components/Confianca";
 import FAQ from "./components/FAQ";
 import Contato from "./components/Contato";
-import Footer from "./components/Footer";
+
+// Páginas reais via hash (#/rota) — sem lib de rotas: o GitHub Pages não
+// reescreve URL pro servidor, então hash routing evita o problema de 404
+// em link direto/refresh. Rotas usam "/", hashes sem "/" (ex.: o skip link
+// "#conteudo") são ignorados pelo router e continuam como âncora nativa.
+const ROTAS = {
+  "/": Home,
+  "/atuacao": Servicos,
+  "/advogados": Sobre,
+  "/duvidas": FAQ,
+  "/contato": Contato,
+};
+
+function rotaAtual() {
+  const h = window.location.hash.slice(1);
+  return h.startsWith("/") && ROTAS[h] ? h : "/";
+}
+
+function useRota() {
+  const [rota, setRota] = useState(rotaAtual);
+  useEffect(() => {
+    const onHashChange = () => {
+      const h = window.location.hash.slice(1);
+      if (h.startsWith("/")) setRota(ROTAS[h] ? h : "/");
+    };
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, []);
+  return rota;
+}
 
 export default function App() {
+  const rota = useRota();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [rota]);
+
+  const Pagina = ROTAS[rota];
+
   return (
     <div className="min-h-screen">
       <a
@@ -16,14 +53,9 @@ export default function App() {
       >
         Pular para o conteúdo
       </a>
-      <Header />
+      <Header rota={rota} />
       <main id="conteudo">
-        <Hero />
-        <Servicos />
-        <Sobre />
-        <Confianca />
-        <FAQ />
-        <Contato />
+        <Pagina />
       </main>
       <Footer />
     </div>
