@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { CONTATO } from "../data/contato";
 
 const PADRAO = "Olá! Vim pelo site e gostaria de falar com o escritório.";
@@ -10,8 +11,9 @@ export function WhatsIcon({ className = "w-4 h-4" }) {
   );
 }
 
-// CTA de WhatsApp reutilizável. Ao clicar, abre um menu para o cliente escolher
-// com qual das sócias falar (CONTATO.telefones, um número por sócia).
+// CTA de WhatsApp reutilizável. O menu com as sócias abre ao passar o
+// mouse (desktop); no touch/teclado, um clique no botão também alterna
+// (não dá pra confiar só em hover em tela sem mouse).
 // `mensagem` contextualiza o texto por seção; `variant` alterna botão sólido / link discreto;
 // `size` encolhe o botão sólido para caber no header.
 export default function WhatsButton({
@@ -22,6 +24,7 @@ export default function WhatsButton({
   className = "",
   onClick,
 }) {
+  const [open, setOpen] = useState(false);
   const base =
     "inline-flex items-center gap-2.5 font-body text-xs font-semibold uppercase tracking-[0.14em] transition duration-200 will-change-transform";
   const tamanhos = { md: "px-6 py-3.5", sm: "px-4 py-2.5" };
@@ -33,14 +36,21 @@ export default function WhatsButton({
   const estilo = estilos[variant] ?? estilos.solid;
 
   return (
-    <details className={`group relative inline-block ${className}`}>
-      <summary
-        className={`${base} ${estilo} list-none cursor-pointer marker:content-none [&::-webkit-details-marker]:hidden`}
+    <div className={`group relative inline-block ${className}`}>
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+        className={`${base} ${estilo}`}
       >
         <WhatsIcon />
         {children}
-      </summary>
-      <div className="absolute left-0 z-20 mt-2 min-w-[14rem] rounded-2xl border border-line bg-card p-1.5 shadow-lg shadow-black/40">
+      </button>
+      <div
+        className={`absolute left-0 z-20 mt-2 min-w-[14rem] rounded-2xl border border-line bg-card p-1.5 shadow-lg shadow-black/40 transition duration-150 group-hover:visible group-hover:opacity-100 group-hover:pointer-events-auto ${
+          open ? "visible opacity-100 pointer-events-auto" : "invisible opacity-0 pointer-events-none"
+        }`}
+      >
         {CONTATO.telefones.map((t) => (
           <a
             key={t.whatsapp}
@@ -55,6 +65,6 @@ export default function WhatsButton({
           </a>
         ))}
       </div>
-    </details>
+    </div>
   );
 }

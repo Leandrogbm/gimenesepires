@@ -2,8 +2,8 @@ import WhatsButton from "./WhatsButton";
 
 const PERGUNTAS = [
   {
-    q: "O primeiro atendimento tem custo?",
-    a: "O contato inicial, destinado à análise preliminar da situação, não possui custo. Os honorários são definidos posteriormente, por escrito, caso haja decisão de contratação dos serviços.",
+    q: "Como funcionam os honorários?",
+    a: "Os valores são sempre combinados previamente e por escrito, de acordo com a complexidade e a natureza de cada caso, antes do início dos trabalhos.",
   },
   {
     q: "O atendimento é restrito a São José do Rio Preto?",
