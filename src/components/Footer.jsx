@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4">
           <p>
             &copy; {fundacao}&ndash;{ano} <span className="text-accent font-medium">Gimenes e Pires</span> · Sociedade
-            de Advogados · Nathalia Gimenes {CONTATO.oabNathalia} · Nicole Pires {CONTATO.oabNicole} · Marco A. Pires · Giovana Alessio
+            de Advogados · Nathalia Gimenes {CONTATO.oabNathalia} · Nicole Pires {CONTATO.oabNicole}
           </p>
           <p>São José do Rio Preto, SP</p>
         </div>

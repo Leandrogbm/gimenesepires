@@ -22,7 +22,7 @@ const SOCIOS = [
   {
     iniciais: "MP",
     nome: "Marco A. Pires",
-    genero: "Sócio-fundador",
+    genero: "Advogado",
     oab: CONTATO.oabMarco,
     texto: "Traz experiência e visão estratégica para a definição do melhor caminho em cada processo.",
     cor: "bg-card text-accent border border-line",
@@ -30,7 +30,7 @@ const SOCIOS = [
   {
     iniciais: "GA",
     nome: "Giovana Alessio",
-    genero: "Sócia-fundadora",
+    genero: "Advogada",
     oab: CONTATO.oabGiovana,
     texto: "Cuida de cada etapa com organização e cuidado, mantendo o cliente sempre informado.",
     cor: "bg-accent text-accent-ink",

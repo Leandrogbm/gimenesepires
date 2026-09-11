@@ -7,7 +7,7 @@ const PROMESSAS = [
   },
   {
     titulo: "Toda a equipe em cada caso",
-    texto: "Os sócios acompanham o processo de perto — não só a estratégia inicial.",
+    texto: "A equipe acompanha o processo de perto — não só a estratégia inicial.",
   },
   {
     titulo: "Você sempre sabe onde está",
