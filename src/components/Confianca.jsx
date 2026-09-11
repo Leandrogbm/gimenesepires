@@ -6,8 +6,8 @@ const PROMESSAS = [
     texto: "A gente explica o que está acontecendo e quais são as opções, em português claro.",
   },
   {
-    titulo: "As duas em cada caso",
-    texto: "Nathalia e Nicole acompanham o processo de perto — não só a estratégia inicial.",
+    titulo: "Toda a equipe em cada caso",
+    texto: "Os sócios acompanham o processo de perto — não só a estratégia inicial.",
   },
   {
     titulo: "Você sempre sabe onde está",

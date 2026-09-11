@@ -45,7 +45,7 @@ The site has **no light theme**. Tokens in `tailwind.config.js` (oklch, not hex 
 
 ## Placeholder content to confirm before publishing
 
-`Sobre.jsx` (bios), `Servicos.jsx` (service cards), `FAQ.jsx` (answers), `TODO` fields in `src/data/contato.js` (email, LinkedIn). No photos — colored initials (NG / NP) stand in for portraits.
+`Sobre.jsx` (bios of the 4 sócios), `Servicos.jsx` (service cards), `FAQ.jsx` (answers), `TODO` fields in `src/data/contato.js` (email, LinkedIn, `oabMarco`/`oabGiovana`). No photos — colored initials stand in for portraits.
 
 ## Deploy — GitHub Pages
 

@@ -21,6 +21,8 @@ export const CONTATO = {
   oabNathalia: "OAB/SP 415.344 · OAB/RJ 233.923 · OAB/BA 71.774",
   // Nicole Rossatto Pires de Campos Lima
   oabNicole: "OAB/SP 409.327",
+  oabMarco: "", // TODO(Leandro): OAB do Marco A. Pires
+  oabGiovana: "", // TODO(Leandro): OAB da Giovana Alessio
 
   // Avaliações e localização — Perfil da Empresa no Google
   google: {

@@ -4,7 +4,7 @@ import WhatsButton from "./WhatsButton";
 
 const LINKS = [
   { href: "#atuacao", label: "Como ajudamos" },
-  { href: "#sobre", label: "As sócias" },
+  { href: "#sobre", label: "Advogados" },
   { href: "#diferenciais", label: "Por que a G&P" },
   { href: "#faq", label: "Dúvidas" },
   { href: "#contato", label: "Contato" },
