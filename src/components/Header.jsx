@@ -48,7 +48,7 @@ export default function Header() {
               {l.label}
             </a>
           ))}
-          <WhatsButton className="!px-5 !py-2.5">WhatsApp</WhatsButton>
+          <WhatsButton size="sm">WhatsApp</WhatsButton>
         </nav>
 
         <button

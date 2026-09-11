@@ -5,8 +5,11 @@ const ENDERECO_BUSCA = encodeURIComponent(
 );
 
 export const CONTATO = {
-  telefones: ["(17) 99274-1621", "(18) 99616-5228"],
-  whatsapp: "5518996165228", // (18) 99616-5228 — apenas números, com DDI 55
+  // Um número por sócia — os botões de WhatsApp deixam o cliente escolher com quem falar.
+  telefones: [
+    { nome: "Nicole Pires", numero: "(17) 99274-1621", whatsapp: "5517992741621" },
+    { nome: "Nathalia Gimenes", numero: "(18) 99616-5228", whatsapp: "5518996165228" },
+  ],
   email: "contato@gimenesepires.com.br", // TODO(Leandro): confirmar e-mail real
   endereco:
     "R. Voluntários de São Paulo, 3180 — Sala 71, Centro, São José do Rio Preto - SP, 15015-200",

@@ -4,10 +4,10 @@ import GoogleReviews from "./GoogleReviews";
 import WhatsButton from "./WhatsButton";
 
 const LINHAS = [
-  ...CONTATO.telefones.map((t, i) => ({
-    dt: i === 0 ? "Telefone" : "",
-    href: `tel:${t.replace(/\D/g, "")}`,
-    label: t,
+  ...CONTATO.telefones.map((t) => ({
+    dt: t.nome,
+    href: `tel:${t.whatsapp}`,
+    label: t.numero,
   })),
   { dt: "E-mail", href: `mailto:${CONTATO.email}`, label: CONTATO.email },
   { dt: "Horário", label: CONTATO.horario },
