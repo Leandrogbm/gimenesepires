@@ -7,10 +7,10 @@ function IconeRede({ children }) {
   return (
     <svg
       viewBox="0 0 24 24"
-      className="w-[18px] h-[18px]"
+      className="w-6 h-6"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.7"
+      strokeWidth="1.6"
       strokeLinecap="round"
       strokeLinejoin="round"
       aria-hidden="true"
@@ -135,7 +135,7 @@ export default function Contato() {
                   rel="noreferrer"
                   aria-label={r.nome}
                   title={r.nome}
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-line text-muted transition-colors hover:border-accent hover:text-accent"
+                  className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-line bg-bg/30 text-fg/90 transition-colors hover:border-accent hover:bg-bg/60 hover:text-accent"
                 >
                   <r.Icone />
                 </a>
