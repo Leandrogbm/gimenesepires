@@ -54,9 +54,9 @@ export default function FAQ() {
             <WhatsButton
               variant="link"
               className="mt-8"
-              mensagem="Olá, tenho uma dúvida que não foi respondida nas perguntas frequentes do site."
+              mensagem="Olá, ainda tenho uma dúvida que não está nas perguntas frequentes do site."
             >
-              Minha dúvida não foi respondida
+              Ainda tenho uma dúvida
             </WhatsButton>
           </div>
         </div>

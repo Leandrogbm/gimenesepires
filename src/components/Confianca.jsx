@@ -42,7 +42,7 @@ export default function Confianca() {
             variant="link"
             mensagem="Olá, gostaria de solicitar uma orientação inicial sobre o meu caso."
           >
-            Solicitar orientação inicial
+            Solicitar uma orientação inicial
           </WhatsButton>
         </div>
       </div>

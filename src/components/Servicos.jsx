@@ -47,8 +47,8 @@ export default function Servicos() {
         </div>
 
         <div className="mt-12">
-          <WhatsButton mensagem="Olá, consultei as áreas de atuação no site e gostaria de entender qual se aplica ao meu caso.">
-            Preciso de orientação sobre o meu caso
+          <WhatsButton mensagem="Olá, gostaria de saber qual serviço se aplica ao meu caso.">
+            Saber qual serviço se aplica ao meu caso
           </WhatsButton>
         </div>
       </div>

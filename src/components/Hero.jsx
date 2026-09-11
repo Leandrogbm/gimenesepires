@@ -29,8 +29,8 @@ export default function Hero() {
         </div>
 
         <div className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4">
-          <WhatsButton mensagem="Olá, vim pelo site e gostaria de relatar a minha situação ao escritório.">
-            Expor meu caso agora
+          <WhatsButton mensagem="Olá, gostaria de falar sobre o meu caso.">
+            Falar sobre o meu caso
           </WhatsButton>
           <a
             href="#atuacao"

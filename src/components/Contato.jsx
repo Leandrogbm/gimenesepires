@@ -32,9 +32,9 @@ export default function Contato() {
             <WhatsButton
               variant="onDark"
               className="mt-8"
-              mensagem="Olá, vim pelo site da Gimenes e Pires e gostaria de tratar sobre o meu caso."
+              mensagem="Olá, vim pelo site da Gimenes e Pires e gostaria de falar sobre o meu caso."
             >
-              Expor meu caso
+              Falar com o escritório
             </WhatsButton>
             <GoogleReviews className="mt-8" tone="paper" />
             <LogoMark invert className="w-20 mt-12 opacity-80" />
