@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsFloat from "./components/WhatsFloat";
 import Home from "./pages/Home";
+import SobreEscritorio from "./components/SobreEscritorio";
 import Servicos from "./components/Servicos";
 import Sobre from "./components/Sobre";
 import FAQ from "./components/FAQ";
@@ -14,6 +15,7 @@ import Contato from "./components/Contato";
 // "#conteudo") são ignorados pelo router e continuam como âncora nativa.
 const ROTAS = {
   "/": Home,
+  "/sobre": SobreEscritorio,
   "/atuacao": Servicos,
   "/advogados": Sobre,
   "/duvidas": FAQ,
@@ -22,6 +24,7 @@ const ROTAS = {
 
 const TITULOS = {
   "/": "Gimenes e Pires — Sociedade de Advogados",
+  "/sobre": "Sobre — Gimenes e Pires",
   "/atuacao": "Áreas de Atuação — Gimenes e Pires",
   "/advogados": "Quadro de Advogados — Gimenes e Pires",
   "/duvidas": "Dúvidas — Gimenes e Pires",

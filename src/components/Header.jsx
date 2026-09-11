@@ -3,6 +3,7 @@ import { Wordmark } from "./Logo";
 
 const LINKS = [
   { path: "/", label: "Home" },
+  { path: "/sobre", label: "Sobre" },
   { path: "/atuacao", label: "Áreas de Atuação" },
   { path: "/advogados", label: "Quadro de Advogados" },
   { path: "/duvidas", label: "Dúvidas" },
