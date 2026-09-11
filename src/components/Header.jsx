@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Wordmark } from "./Logo";
-import WhatsButton from "./WhatsButton";
 
 const LINKS = [
   { path: "/", label: "Home" },
@@ -51,7 +50,6 @@ export default function Header({ rota }) {
               {l.label}
             </a>
           ))}
-          <WhatsButton size="sm">WhatsApp</WhatsButton>
         </nav>
 
         <button
@@ -83,9 +81,6 @@ export default function Header({ rota }) {
               {l.label}
             </a>
           ))}
-          <WhatsButton className="mt-1 self-start" onClick={() => setOpen(false)}>
-            WhatsApp
-          </WhatsButton>
         </nav>
       )}
     </header>

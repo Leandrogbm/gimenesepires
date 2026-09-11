@@ -69,9 +69,15 @@ export default function Contato() {
               </div>
             </dl>
 
-            <div className="mt-6 flex gap-6 font-body text-xs uppercase tracking-[0.14em] text-muted">
+            <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-body text-xs uppercase tracking-[0.14em] text-muted">
               <a href={CONTATO.instagram} target="_blank" rel="noreferrer" className="hover:text-accent">
                 Instagram
+              </a>
+              <a href={CONTATO.facebook} target="_blank" rel="noreferrer" className="hover:text-accent">
+                Facebook
+              </a>
+              <a href={CONTATO.waze} target="_blank" rel="noreferrer" className="hover:text-accent">
+                Waze
               </a>
               <a href={CONTATO.google.url} target="_blank" rel="noreferrer" className="hover:text-accent">
                 Ver no Google
