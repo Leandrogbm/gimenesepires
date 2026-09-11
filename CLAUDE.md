@@ -45,7 +45,7 @@ The site has **no light theme**. Tokens in `tailwind.config.js` (oklch, not hex 
 
 ## Placeholder content to confirm before publishing
 
-`Sobre.jsx` (bios of the 4 sócios), `Servicos.jsx` (service cards), `FAQ.jsx` (answers), `TODO` fields in `src/data/contato.js` (email, LinkedIn, `oabMarco`/`oabGiovana`). No photos — colored initials stand in for portraits.
+`Sobre.jsx` (bios of the 4 sócios), `FAQ.jsx` (answers), `TODO` fields in `src/data/contato.js` (email, LinkedIn, `oabMarco`/`oabGiovana`). No photos — colored initials stand in for portraits. `Servicos.jsx` lists the 8 real practice areas (from the firm's actual case load, not invented), each with a small hand-drawn line icon (`IconBase` + one `<Icon*>` per area) instead of a photo — keep new areas in that same minimal-primitives style (line/rect/circle), no icon library.
 
 ## Deploy — GitHub Pages
 
