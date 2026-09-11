@@ -17,7 +17,8 @@ export default function Footer() {
           Este site tem caráter informativo e não substitui a consulta jurídica
           individualizada. O contato inicial não gera vínculo contratual nem ônus
           financeiro. Os dados fornecidos são tratados com sigilo, em conformidade
-          com a Lei Geral de Proteção de Dados (LGPD).
+          com a Lei Geral de Proteção de Dados (LGPD). Este site utiliza o Google
+          Analytics para estatísticas de acesso, de forma anônima e agregada.
         </p>
       </div>
     </footer>

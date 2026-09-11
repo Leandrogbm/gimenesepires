@@ -20,6 +20,14 @@ const ROTAS = {
   "/contato": Contato,
 };
 
+const TITULOS = {
+  "/": "Gimenes e Pires — Sociedade de Advogados",
+  "/atuacao": "Áreas de Atuação — Gimenes e Pires",
+  "/advogados": "Quadro de Advogados — Gimenes e Pires",
+  "/duvidas": "Dúvidas — Gimenes e Pires",
+  "/contato": "Contato — Gimenes e Pires",
+};
+
 function rotaAtual() {
   const h = window.location.hash.slice(1);
   return h.startsWith("/") && ROTAS[h] ? h : "/";
@@ -42,6 +50,16 @@ export default function App() {
   const rota = useRota();
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = TITULOS[rota] ?? TITULOS["/"];
+    // Page view manual — a rota é um hash (#/x), o GA4 nunca veria isso
+    // sozinho, e o automático (send_page_view) só dispara uma vez no load.
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "page_view", {
+        page_path: rota,
+        page_location: window.location.href,
+        page_title: document.title,
+      });
+    }
   }, [rota]);
 
   const Pagina = ROTAS[rota];

@@ -55,3 +55,7 @@ The site has **no light theme**. Tokens in `tailwind.config.js` (oklch, not hex 
 - DNS is at **registro.br** (nameservers `a.auto.dns.br` / `b.auto.dns.br` — moved off Hostinger). Zone must have: 4× `A @` → `185.199.108/109/110/111.153`, `CNAME www` → `leandrogbm.github.io`.
 - HTTPS: once DNS resolves, GitHub issues the Let's Encrypt cert automatically; then enable "Enforce HTTPS".
 - No email/MX configured on the domain (registro.br default is null MX). Adding mail later is independent of the A/CNAME records.
+
+## Analytics
+
+Google Analytics 4 is wired in `index.html` (`G-5N2GLDRFHW`), guarded to only load when `location.hostname === "gimenesepires.com.br"` (never fires on localhost/preview). Since routing is client-side hash (`#/path`), GA's automatic pageview is disabled (`send_page_view: false`) — `App.jsx`'s route-change effect fires `gtag('event', 'page_view', ...)` manually per route, and also sets `document.title` per `TITULOS`. Dashboard: analytics.google.com, under the firm's Google account — that's the "private page" for metrics; no custom auth/dashboard was built into the site itself. GA4 doesn't expose raw visitor IP or identity (by design/privacy law) — only aggregated pageviews, engagement time, and coarse geo.
