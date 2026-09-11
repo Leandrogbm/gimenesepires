@@ -6,7 +6,7 @@ const SOCIAS = [
     nome: "Nathalia Gimenes",
     oab: CONTATO.oabNathalia,
     texto:
-      "Conduz as frentes contratual e consultiva, com assessoria jurídica contínua a pessoas e empresas e a elaboração e revisão de contratos.",
+      "Atua com rigor técnico e proximidade, buscando sempre a solução mais clara e segura para cada cliente.",
     cor: "bg-accent text-accent-ink",
   },
   {
@@ -14,7 +14,7 @@ const SOCIAS = [
     nome: "Nicole Pires",
     oab: CONTATO.oabNicole,
     texto:
-      "Responde pelo contencioso cível e pelo acompanhamento processual, da notificação extrajudicial à condução de ações em juízo.",
+      "Conduz cada caso com atenção aos detalhes e compromisso com o resultado, do primeiro contato até a decisão final.",
     cor: "bg-card text-accent border border-line",
   },
 ];
