@@ -15,6 +15,10 @@ const CLIENTES = [
   { nome: "Surmani & Woltra", arquivo: "surmani-woltra" },
   { nome: "Cliente", arquivo: "cliente-13" },
   { nome: "TH Finanças & Consórcios", arquivo: "th-financas-consorcios" },
+  { nome: "Kawaii Poke", arquivo: "kawaii-poke" },
+  { nome: "Suki Temakeria", arquivo: "suki-temakeria" },
+  { nome: "Sushi Bar", arquivo: "sushi-bar" },
+  { nome: "Santo Peixe Empório & Peixaria", arquivo: "santo-peixe" },
 ];
 
 // Faixa duplicada (2x) pra dar loop perfeito: a animação desloca -50%,
