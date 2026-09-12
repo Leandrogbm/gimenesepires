@@ -31,7 +31,6 @@ function Logo({ c }) {
       <img
         src={`/brand/clientes/${c.arquivo}.jpg`}
         alt={c.nome}
-        loading="lazy"
         className="h-16 w-16 sm:h-20 sm:w-20 rounded-full border border-line object-cover"
       />
     </div>
