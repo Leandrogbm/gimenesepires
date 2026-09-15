@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import Clientes from "./Clientes";
+import { CONTATO } from "../data/contato";
 
 const PARAGRAFOS = [
   "Gimenes e Pires Sociedade de Advogados é um escritório sediado em São José do Rio Preto (SP), com mais de 10 anos de atuação, liderado por duas advogadas: Nathália Fernandes Gimenes e Nicole R. Pires de Campos Lima.",
@@ -18,6 +19,7 @@ export default function SobreEscritorio() {
             <h2 className="font-display font-light h-sec max-w-3xl text-balance">
               Gimenes e Pires <em className="italic text-accent">Sociedade de Advogados.</em>
             </h2>
+            <p className="mt-4 text-sm text-muted">Sociedade de Advogados · OAB/SP {CONTATO.oabEscritorio}</p>
           </Reveal>
 
           <div className="mt-10 max-w-3xl space-y-6">

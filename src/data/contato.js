@@ -20,6 +20,7 @@ export const CONTATO = {
   waze: "https://www.waze.com/pt-BR/live-map/directions/condominio-edificio-calil-buchalla-r.-voluntarios-de-sao-paulo-3180-sao-jose-do-rio-preto?to=place.w.203556408.2035695151.7963458",
   linkedin: "", // TODO(Leandro): preencher se houver LinkedIn do escritório
   // Nathália Fernandes Gimenes — inscrita em SP, RJ e BA
+  oabEscritorio: "14.988", // registro da sociedade (Gimenes e Pires) na OAB/SP
   oabNathalia: "OAB/SP 415.344 · OAB/RJ 233.923 · OAB/BA 71.774",
   // Nicole Rossatto Pires de Campos Lima
   oabNicole: "OAB/SP 409.327",
