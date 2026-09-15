@@ -13,10 +13,14 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;1,400&display=swap" rel="stylesheet" />
     <script>
       // Google Analytics 4 — só roda no domínio de produção (nunca em
-      // localhost/preview). Measurement ID da propriedade GA4 do escritório
-      // (analytics.google.com). App.jsx dispara o page_view manualmente a
-      // cada troca de rota, já que o site é uma SPA com hash routing.
-      if (location.hostname === "gimenesepires.com.br") {
+      // localhost/preview) e só depois de consentimento (LGPD): fica
+      // definido aqui como função, mas só é chamado por CookieBanner.jsx
+      // quando o visitante aceita (ou já tinha aceitado antes). App.jsx
+      // dispara o page_view manualmente a cada troca de rota, já que o
+      // site é uma SPA com hash routing.
+      window.iniciarAnalytics = function () {
+        if (location.hostname !== "gimenesepires.com.br" || window.__gaIniciado) return;
+        window.__gaIniciado = true;
         var gaScript = document.createElement("script");
         gaScript.async = true;
         gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-5N2GLDRFHW";
@@ -27,7 +31,10 @@
         };
         window.gtag("js", new Date());
         window.gtag("config", "G-5N2GLDRFHW", { send_page_view: false });
-      }
+      };
+      try {
+        if (localStorage.getItem("cookie-consent") === "aceito") window.iniciarAnalytics();
+      } catch (e) {}
     </script>
   </head>
   <body>

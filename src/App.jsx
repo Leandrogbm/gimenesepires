@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsFloat from "./components/WhatsFloat";
+import CookieBanner from "./components/CookieBanner";
 import Home from "./pages/Home";
 import SobreEscritorio from "./components/SobreEscritorio";
 import Servicos from "./components/Servicos";
@@ -81,6 +82,7 @@ export default function App() {
       </main>
       <Footer />
       <WhatsFloat />
+      <CookieBanner />
     </div>
   );
 }

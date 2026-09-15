@@ -1,5 +1,4 @@
 import { LogoMark } from "./Logo";
-import GoogleReviews from "./GoogleReviews";
 import WhatsButton from "./WhatsButton";
 import Reveal from "./Reveal";
 
@@ -45,8 +44,6 @@ export default function Hero() {
               Conhecer nossa atuação
             </a>
           </div>
-
-          <GoogleReviews className="mt-10" />
         </Reveal>
       </div>
     </section>
