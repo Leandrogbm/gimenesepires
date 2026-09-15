@@ -25,10 +25,19 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-50%)" },
         },
+        ring: {
+          "0%, 100%": { transform: "rotate(0deg)" },
+          "20%": { transform: "rotate(14deg)" },
+          "40%": { transform: "rotate(-10deg)" },
+          "60%": { transform: "rotate(6deg)" },
+          "80%": { transform: "rotate(-4deg)" },
+        },
       },
       animation: {
         // percorre a faixa duplicada (ver Clientes.jsx) — -50% = uma volta completa
         marquee: "marquee 26s linear infinite",
+        // balanço de sino no hover dos icones de contato (Contato.jsx)
+        ring: "ring 0.6s ease-in-out",
       },
     },
   },

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Wordmark } from "./Logo";
 
 const LINKS = [
@@ -13,6 +13,28 @@ const LINKS = [
 export default function Header({ rota }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef(null);
+  // Trilho dourado que deslisa sob o link em hover, e volta pro ativo
+  // quando o mouse sai do nav (efeito "sliding navbar").
+  const [marker, setMarker] = useState({ left: 0, width: 0, opacity: 0 });
+
+  const moveMarkerTo = (el) => {
+    if (!el || !navRef.current) return;
+    const navBox = navRef.current.getBoundingClientRect();
+    const box = el.getBoundingClientRect();
+    setMarker({ left: box.left - navBox.left, width: box.width, opacity: 1 });
+  };
+
+  const moveMarkerToActive = () => {
+    const el = navRef.current?.querySelector(`a[data-path="${rota}"]`);
+    if (el) moveMarkerTo(el);
+    else setMarker((m) => ({ ...m, opacity: 0 }));
+  };
+
+  useLayoutEffect(() => {
+    moveMarkerToActive();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [rota]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -21,10 +43,13 @@ export default function Header({ rota }) {
     };
     window.addEventListener("scroll", onScroll);
     window.addEventListener("keydown", onKeyDown);
+    window.addEventListener("resize", moveMarkerToActive);
     return () => {
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("keydown", onKeyDown);
+      window.removeEventListener("resize", moveMarkerToActive);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -38,11 +63,17 @@ export default function Header({ rota }) {
           <Wordmark className="h-14 md:h-16" />
         </a>
 
-        <nav className="hidden lg:flex items-center gap-6 xl:gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted">
+        <nav
+          ref={navRef}
+          onMouseLeave={moveMarkerToActive}
+          className="hidden lg:flex relative items-center gap-6 xl:gap-9 font-body text-[13px] uppercase tracking-[0.14em] text-muted"
+        >
           {LINKS.map((l) => (
             <a
               key={l.path}
+              data-path={l.path}
               href={`#${l.path}`}
+              onMouseEnter={(e) => moveMarkerTo(e.currentTarget)}
               aria-current={rota === l.path ? "page" : undefined}
               className={`transition-colors focus-visible:text-accent hover:text-accent ${
                 rota === l.path ? "text-accent" : ""
@@ -51,6 +82,11 @@ export default function Header({ rota }) {
               {l.label}
             </a>
           ))}
+          <span
+            aria-hidden="true"
+            style={{ left: marker.left, width: marker.width, opacity: marker.opacity }}
+            className="pointer-events-none absolute -bottom-2 h-[2px] rounded-full bg-accent shadow-[0_0_8px_2px_rgba(201,163,95,0.55)] transition-[left,width,opacity] duration-300 ease-out"
+          />
         </nav>
 
         <button
