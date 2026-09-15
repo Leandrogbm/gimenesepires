@@ -33,6 +33,10 @@ export const CONTATO = {
     nota: "5,0",
     avaliacoes: 20,
     url: `https://www.google.com/maps/search/?api=1&query=${ENDERECO_BUSCA}`,
+    // Link direto do Google Maps com a aba de avaliações já aberta (o "!9m1!1b1"
+    // no fim é o que faz o Maps abrir na aba de reviews, não só no mapa/pin).
+    urlAvaliacoes:
+      "https://www.google.com/maps/place/Gimenes+e+Pires+Sociedade+de+Advogados/@-20.8129923,-49.3815313,1001m/data=!3m1!1e3!4m8!3m7!1s0x94bdadaaf62de215:0xfaae85991364be2c!8m2!3d-20.8129923!4d-49.3815313!9m1!1b1!16s%2Fg%2F11hzx3_bv0",
     mapaEmbed: `https://www.google.com/maps?q=${ENDERECO_BUSCA}&z=16&output=embed`,
   },
 };

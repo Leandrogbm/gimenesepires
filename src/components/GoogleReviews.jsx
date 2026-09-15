@@ -1,6 +1,6 @@
 import { CONTATO } from "../data/contato";
 
-const { nota, avaliacoes, url } = CONTATO.google;
+const { nota, avaliacoes, urlAvaliacoes } = CONTATO.google;
 
 // "G" em traço monocromático — mesmo padrão de linha dos ícones da página
 // de Contato (stroke currentColor, sem cor própria), em vez do G colorido
@@ -28,7 +28,7 @@ export default function GoogleReviews({ className = "", tone = "ink" }) {
   const muted = tone === "paper" ? "text-fg/70" : "text-muted"; // ponytail: tone kept for call-site compat
   return (
     <a
-      href={url}
+      href={urlAvaliacoes}
       target="_blank"
       rel="noreferrer"
       className={`inline-flex items-center gap-3 font-body text-sm hover:text-accent transition-colors ${className}`}
