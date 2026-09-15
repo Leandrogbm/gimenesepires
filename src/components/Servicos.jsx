@@ -92,6 +92,37 @@ const IconContrato = () => (
   </IconBase>
 );
 
+const IconCadeado = () => (
+  <IconBase>
+    <rect x="6" y="11" width="12" height="9" rx="1.5" />
+    <path d="M8.5 11V8a3.5 3.5 0 0 1 7 0v3" />
+    <circle cx="12" cy="15.3" r="1.2" />
+  </IconBase>
+);
+
+const IconChecklist = () => (
+  <IconBase>
+    <rect x="6" y="4" width="12" height="17" rx="1.5" />
+    <rect x="9" y="2.5" width="6" height="3" rx="1" />
+    <path d="M9 12.5l2 2 4-4.5" />
+  </IconBase>
+);
+
+const IconSacola = () => (
+  <IconBase>
+    <path d="M6.5 8h11l-1 12h-9z" />
+    <path d="M9 8V6a3 3 0 0 1 6 0v2" />
+  </IconBase>
+);
+
+const IconCartao = () => (
+  <IconBase>
+    <rect x="3" y="6" width="18" height="13" rx="2" />
+    <line x1="3" y1="10" x2="21" y2="10" />
+    <line x1="6" y1="14.5" x2="10" y2="14.5" />
+  </IconBase>
+);
+
 const SERVICOS = [
   {
     titulo: "Direito Civil",
@@ -132,6 +163,26 @@ const SERVICOS = [
     titulo: "Contratos",
     texto: "Elaboração, revisão e negociação de contratos em geral.",
     Icone: IconContrato,
+  },
+  {
+    titulo: "Direito Digital e Proteção de Dados",
+    texto: "Regula a internet, crimes cibernéticos e a adequação das empresas à LGPD.",
+    Icone: IconCadeado,
+  },
+  {
+    titulo: "Compliance e ESG",
+    texto: "Auxilia organizações a seguirem normas éticas, regulatórias e de sustentabilidade corporativa.",
+    Icone: IconChecklist,
+  },
+  {
+    titulo: "Direito do Consumidor",
+    texto: "Defende as relações de consumo, lidando com publicidade abusiva, produtos com defeito, cobranças indevidas e e-commerce.",
+    Icone: IconSacola,
+  },
+  {
+    titulo: "Direito Bancário e das Fintechs",
+    texto: "Regula a atuação de bancos tradicionais, bancos digitais, arranjos de pagamento (como o Pix) e regras do Banco Central.",
+    Icone: IconCartao,
   },
 ];
 
