@@ -9,6 +9,7 @@ import Servicos from "./components/Servicos";
 import Sobre from "./components/Sobre";
 import FAQ from "./components/FAQ";
 import Contato from "./components/Contato";
+import Privacidade from "./components/Privacidade";
 
 // Páginas reais via hash (#/rota) — sem lib de rotas: o GitHub Pages não
 // reescreve URL pro servidor, então hash routing evita o problema de 404
@@ -21,6 +22,7 @@ const ROTAS = {
   "/advogados": Sobre,
   "/duvidas": FAQ,
   "/contato": Contato,
+  "/privacidade": Privacidade,
 };
 
 const TITULOS = {
@@ -30,6 +32,7 @@ const TITULOS = {
   "/advogados": "Quadro de Advogados — Gimenes e Pires",
   "/duvidas": "Dúvidas — Gimenes e Pires",
   "/contato": "Contato — Gimenes e Pires",
+  "/privacidade": "Política de Privacidade — Gimenes e Pires",
 };
 
 function rotaAtual() {

@@ -19,7 +19,11 @@ export default function Footer() {
           individualizada. O contato inicial não gera vínculo contratual nem ônus
           financeiro. Os dados fornecidos são tratados com sigilo, em conformidade
           com a Lei Geral de Proteção de Dados (LGPD). Este site utiliza o Google
-          Analytics para estatísticas de acesso, de forma anônima e agregada.
+          Analytics para estatísticas de acesso, de forma anônima e agregada.{" "}
+          <a href="#/privacidade" className="underline hover:text-accent">
+            Política de Privacidade e Cookies
+          </a>
+          .
         </p>
       </div>
     </footer>

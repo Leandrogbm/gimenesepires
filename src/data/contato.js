@@ -11,6 +11,7 @@ export const CONTATO = {
     { nome: "Nathália Gimenes", numero: "(18) 99616-5228", whatsapp: "5518996165228" },
   ],
   email: "contato@gimenesepires.com.br", // TODO(Leandro): confirmar e-mail real
+  cnpj: "18.984.077/0001-09",
   endereco:
     "R. Voluntários de São Paulo, 3180 — Sala 71, Centro, São José do Rio Preto - SP, 15015-200",
   edificio: "Condomínio Edifício Calil Buchala",

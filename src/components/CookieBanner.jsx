@@ -38,7 +38,11 @@ export default function CookieBanner() {
         <p className="max-w-2xl text-sm leading-relaxed text-muted">
           Usamos cookies de análise (Google Analytics) para entender como o site é
           usado, de forma anônima e agregada. Você pode aceitar ou recusar, conforme
-          a LGPD.
+          a LGPD.{" "}
+          <a href="#/privacidade" className="underline hover:text-accent">
+            Ver termos
+          </a>
+          .
         </p>
         <div className="flex shrink-0 gap-3">
           <button
