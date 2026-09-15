@@ -21,7 +21,6 @@ export default function SobreEscritorio() {
               Gimenes e Pires <em className="italic text-accent">Sociedade de Advogados.</em>
             </h2>
             <p className="mt-4 text-sm text-muted">Sociedade de Advogados · OAB/SP {CONTATO.oabEscritorio}</p>
-            <GoogleReviews className="mt-6" />
           </Reveal>
 
           <div className="mt-10 max-w-3xl space-y-6">
@@ -31,6 +30,10 @@ export default function SobreEscritorio() {
               </Reveal>
             ))}
           </div>
+
+          <Reveal delay={PARAGRAFOS.length * 90} className="mt-8 max-w-3xl">
+            <GoogleReviews />
+          </Reveal>
         </div>
       </section>
 
