@@ -2,10 +2,10 @@ import Reveal from "./Reveal";
 import Clientes from "./Clientes";
 
 const PARAGRAFOS = [
-  "A Gimenes e Pires é um escritório de advocacia sediado em São José do Rio Preto (SP), fundado e liderado por duas advogadas: Nathália Fernandes Gimenes e Nicole Pires. Juntas, as sócias constituíram uma banca conduzida integralmente por mulheres, com uma proposta que une técnica jurídica a um olhar humano sobre cada caso — combinando empatia, excelência e visão estratégica no atendimento aos clientes.",
-  "O trabalho das duas se apoia em uma atuação marcada por sensibilidade e firmeza ao mesmo tempo: buscam soluções que respeitem a individualidade de cada cliente, sem abrir mão da responsabilidade e do rigor técnico que os processos exigem. Essa combinação se reflete diretamente nas áreas em que o escritório atua, boa parte delas ligada a momentos delicados na vida das pessoas — como divórcios, guarda de filhos e pensão alimentícia — tratados com profissionalismo e cuidado.",
-  "Além do direito de família, a dupla também representa trabalhadores em questões trabalhistas, atuando para garantir justiça e equidade nas relações de trabalho, e presta consultoria e representação em matérias contratuais, de responsabilidade civil e de direito do consumidor. No dia a dia, isso significa transitar entre audiências, pareceres e negociações, sempre com o objetivo de entregar ao cliente não só uma solução jurídica, mas uma experiência de acompanhamento próximo.",
-  "Em resumo, Nathália e Nicole traduzem, na prática, a ideia de uma advocacia feita por mulheres para pessoas: técnica quando o caso pede precisão, e acolhedora quando o momento pede escuta.",
+  "Gimenes e Pires Sociedade de Advogados é um escritório sediado em São José do Rio Preto (SP), com mais de 10 anos de atuação, liderado por duas advogadas: Nathália Fernandes Gimenes e Nicole R. Pires de Campos Lima.",
+  "Somos uma equipe de advogados qualificados com visão de negócios e foco em resultados, desenvolvendo soluções personalizadas para cada tipo de cliente, prezando pela excelência e competência dos serviços prestados.",
+  "Nossos serviços englobam a esfera consultiva, preventiva e contenciosa, operando em todas as instâncias judiciárias. Temos em mente que o compromisso com o cliente é o pilar de nossa reputação. Assim, temos relacionamento com fortes valores, que nos permitem agir em prol de nossos clientes e antever oportunidades.",
+  "Em resumo, o escritório traduz, na prática, a ideia de uma advocacia técnica quando o caso pede precisão, e acolhedora quando o momento pede escuta.",
 ];
 
 export default function SobreEscritorio() {
